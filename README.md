@@ -83,8 +83,8 @@ In some partials/views the more complex Handlebars.js helpers/function are requi
 
 
 #### String imports
-
+ will be added soon
 
 #### See Handlebars.js Documentation:
 
-- [Next.js Documentation](https://nextjs.org/docs)
+- [Handlebars.js Documentation](https://handlebarsjs.com/guide/)
