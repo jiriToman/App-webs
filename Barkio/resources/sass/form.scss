@@ -1,0 +1,126 @@
+// main: main.scss
+@import 'colors.scss';
+@import 'screensizes.scss';
+
+.submit {
+    color: getColor(surface);
+    font-weight: 700;
+    width: 152px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: getColor(primary-base);
+    padding: 16px 24px;
+    border: none;
+    margin: 0px;
+    position: relative;
+    display: block;
+    outline: none;
+
+    &:hover {
+        background-color: getColor(primary-lighter);
+    }
+
+    &:active {
+        background-color: getColor(primary-darker);
+    }
+
+    @media screen and (min-width: $NOTxs) {
+        float: left;
+        margin: 0%;
+    }
+
+    @media screen and (min-width: $xl) {
+        height: 64px;
+        border-radius: 32px;
+        float: left;
+        margin: 0%;
+    }
+}
+
+input {
+    -webkit-appearance: none;
+    border: solid 2px getColor(high-border);
+    border-radius: 28px;
+    width: 272px;
+    height: 56px;
+    margin: 0px;
+    margin-bottom: 1rem;
+    display: block;
+    position: relative;
+    padding: 1rem 1.5rem;
+    outline: none;
+    line-height: normal;
+    background-color: inherit;
+
+    &:focus {
+        border: solid 2px getColor(primary-base);
+    }
+
+    @media screen and (min-width: $NOTxs) {
+        float: left;
+        margin-bottom: 0rem;
+    }
+
+    @media screen and (min-width: $xl) {
+        width: 364px;
+        height: 64px;
+        border-radius: 32px;
+        margin-right: 24px;
+        padding: 20px 28px;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: $lg)and (max-width: $NOTxl) {
+        width: 284px;
+        margin-right: 16px;
+        margin-left: 0;
+        // padding:
+    }
+
+    @media screen and (min-width: $NOTsm)and (max-width: $NOTlg) {
+        width: 222px;
+        margin-right: 16px;
+    }
+
+    @media screen and (min-width: $NOTxs)and (max-width:$sm) {
+        width: 270px;
+        margin-right: 16px;
+    }
+}
+
+.mod-iconsd {
+    margin-top: 0;
+}
+
+#headerform {
+    a {
+        font-weight: 700;
+        color: getColor(primary-base);
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+#headformfour {
+    @media screen and (max-width: $NOTsm) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+}
+
+form {
+    @media screen and (min-width: $lg) {
+        margin-bottom: 0;
+    }
+}
+
+.mobmodb {
+    @media screen and (min-width: $lg) and(max-width: $NOTxl) {
+        padding: 12px 16px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,157 @@
+// main: main.scss
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+    @media only screen and (max-width: $sm) {
+        -webkit-overflow-scrolling: touch;
+    }
+    position: relative;
+    background-color: getColor(surface);
+    @media only screen and (min-width: $lg) {
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+}
+
+.center-content {
+    min-height: 100vh;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    footer {
+        width: 100vw;
+        min-height: 107px;
+        align-self: flex-end;
+    }
+    header {
+        min-height: 442px;
+        align-content: center;
+    }
+}
+
+#testdiv {
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    background-color: black;
+    @media screen and (min-width: $lg) {
+        background-color: #ffffff;
+    }
+}
+
+//fix pro zmenu v csspokud je container child kolapsibilniho menu v md
+.navbar-expand-md {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.row {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+// preloading images
+// body::after {
+//     position: absolute;
+//     width: 0;
+//     height: 0;
+//     overflow: hidden;
+//     z-index: -1;
+//     content: url(../images/device.png) url(../video/BarkioVideoWebFrame.jpg);
+// }
+.section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @media screen and (min-width: $xl) {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+}
+
+a {
+    transition: all 0.3s;
+}
+
+%section {
+    @media screen and (max-width: $NOTlg) {
+        padding-bottom: 72px;
+        padding-top: 88px;
+    }
+    @media screen and (min-width: $xl) {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+    @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: $xl) {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+}
+
+.s-header {
+    @media screen and (max-width: $NOTlg) {
+        padding-bottom: 56px;
+    }
+    @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+        padding-bottom: 42px;
+    }
+    @media screen and (min-width: $xl) {
+        padding-bottom: 96px;
+    }
+}
+
+.hiddenxllgrelease {
+    display: none !important;
+}
+
+.bg-light {
+    background-color: getColor(light-background) !important;
+}
+
+.rounded {
+    border-radius: 12px !important;
+}
+
+.emoji {
+    color: getColor(high-emphasis);
+}
+
+.dynamicsvg {
+    vertical-align: bottom;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.qr {
+    border: 3px solid white;
+}
+
+.mt-16p {
+    margin-top: 16px !important;
+}
+
+.mb-16p {
+    margin-bottom: 16px !important;
+}
+
+.pb-8p {
+    padding-bottom: 8px !important;
+}
+
+.mt-lg-18p {
+    @media screen and (min-width: $lg) {
+        margin-top: 18px;
+    }
+}

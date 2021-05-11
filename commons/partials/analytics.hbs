@@ -1,0 +1,93 @@
+
+  <!-- Google Tag Manager -->
+<script>
+    var currenturl = window.location.href;
+    var pagePath=window.location.pathname;
+console.log('url analyt je '+currenturl)
+    function whatApp(url){
+        if(url.indexOf("barkio") > -1){
+            return "Barkio";
+        }else{
+            return "Bibino";
+        }
+    };
+    var appname =whatApp(currenturl);
+
+    function removeLang(path){
+        let result=path;
+        result.replace('/en/','');
+        result.replace('/de/','');
+        result.replace('/cs/','');
+        result.replace('/nl/','');
+        return result;
+    
+    };
+    function title(path,app){
+        let result=removeLang(path)
+        if(path.indexOf("/download-thanks") > -1){
+            return "Desktop download";
+        }else if((path.indexOf("/blog") > -1)&&(result.length<=5)){
+            return app+" blog";
+        }else if(path.indexOf("/comparison") > -1){
+            if(app=="Barkio"){
+                return app+" comparison";    
+            }else{
+                return "none";    
+            }
+        }else if(path.indexOf("/download") > -1){
+            return app+" download options";
+        }else if(path.indexOf("/confirmation-newsletter") > -1){
+             if(app=="Barkio"){
+                 return "Confirmation of the "+app+" newsletter";  
+            }else{
+                return "none";    
+            }
+        }else if(path.indexOf("/confirmation") > -1){
+            return "Confirmation";
+        }else if(path.indexOf("/appnewsletter") > -1){
+             if(app=="Barkio"){
+                 return "Reply to the app Newsletter";
+            }else{
+                return "none";    
+            }            
+        }else if((path.indexOf("/account") > -1) &&(result.length<=8)){
+          
+                return app+" account";    
+           
+        }else if((path.indexOf("/pricing") > -1)&&(result.length<=8)){
+            
+                return app+" basic pricing page";    
+          
+        }else if(path.indexOf("/pricing") > -1){
+           
+                let promotion = path.substring(8);
+                return app+" promotion "+promotion;
+            
+        }
+    };
+    var pageTitle=title(pagePath,appname);
+    function getID(app){
+        if(app=="Bibino"){
+            return 'GTM-NKPV5FK';
+        }else{
+            return 'GTM-PDLR876';
+        }
+    };
+    gtmID=getID(appname); 
+    console.log("GTM id je: "+gtmID);
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',gtmID);
+    if (pageTitle!="none"){
+        dataLayer.push({
+        'event' : 'pageview',
+        'pagePath' : pagePath,
+        'pageTitle' : pageTitle
+        });
+    };
+    console.log("path: "+pagePath+ " title: "+ pageTitle);
+</script>
+<!-- End Google Tag Manager -->

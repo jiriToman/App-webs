@@ -1,0 +1,11 @@
+{
+    "name": "barkio",
+    "lang": ["de", "cs"],
+    "apiUrl": "https://api.production.barkio.com/parse",
+    "routes": {
+        "static": "/Barkio",
+        "linkA": "https://apps.apple.com/app/apple-store/id1362484782?pt=271572&ct=Barkio%20Website%20QR%20code&mt=8",
+        "linkG": "https://play.google.com/store/apps/details?id=com.tappytaps.android.barkio&referrer=utm_source%3Dweb-qr-code",
+        "linkYT": "https://youtu.be/iCkkbTkrSJU"
+    }
+}

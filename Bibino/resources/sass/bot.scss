@@ -1,0 +1,58 @@
+// main: ../main.scss
+#tars-widget-fab {
+    bottom: 12px !important;
+
+    .convbot-button {
+        border-radius: 30px !important;
+        background-color: getColor(primary-base) !important;
+        box-shadow: 0 3px 14px 2px $medium-border, 0 8px 10px 1px $light-background !important;
+    }
+
+    .convbot-close {
+        width: 20px !important;
+        height: 20px !important;
+        margin: 34% !important;
+
+        path {
+            fill: white !important;
+        }
+    }
+    .notification-count {
+        bottom: 57px !important;
+        right: 7px !important;
+
+        @media screen and (min-width: 992px) {
+            display: none !important;
+        }
+    }
+
+    .callout-message {
+        @media screen and (max-width: 991px) {
+            display: none !important;
+        }
+
+        box-shadow: 0 3px 14px 2px $medium-border,
+        0 8px 10px 1px $light-background !important;
+        font-size: 16px !important;
+        border-radius: 20px !important;
+        color: #757575 !important;
+
+        @media screen and (min-width: $xl) {
+            font-size: 18px !important;
+        }
+
+        .callout-message-tick {
+            bottom: 17px !important;
+            line-height: 24px !important;
+        }
+
+        .callout-message-close {
+            top: -10px !important;
+            left: -10px !important;
+
+            svg {
+                vertical-align: unset !important;
+            }
+        }
+    }
+}

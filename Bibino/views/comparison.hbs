@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+{{!-- noindex layout --}}
+<head>
+
+ {{> head/noindex}}
+
+</head>
+
+<body>
+
+{{> trackscripts/gtmpixel}}
+
+
+
+  {{!-- menu definovano views/partials/mainlayout  --}}
+  {{> mainlayout/nav}}
+
+  {{!-- body definovanno views/ a hbs file podle stranky --}}
+
+
+
+{{> singlepage/comparison}}
+
+
+
+{{> mainlayout/footer/footer}}
+
+  {{> endscripts/noswiper}}
+ 
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+// main: ../main.scss
+#testimony {
+    // background-color: getColor(surface);
+    background-color: getColor(light-background);
+    @extend %section;
+    color: getColor(medium-emphasis);
+    text-align: center;
+
+    .firstp {
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 32px;
+
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            padding-bottom: 48px;
+        }
+
+        @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+            padding-bottom: 28px;
+        }
+
+        @media screen and (min-width: $xl) {
+            padding-top: 0px;
+            padding-bottom: 56px;
+        }
+    }
+
+    .secondp {
+        padding-bottom: 24px;
+        margin-bottom: 0px;
+    }
+}
+
+//  SWIPER
+@mixin swipeDeNl {
+    @media screen and (max-width: 359px) {
+        height: 560px;
+    }
+
+    @media screen and (min-width: 360px) and (max-width:$xs) {
+        height: 510px;
+    }
+
+    @include sm {
+        height: 460px;
+    }
+
+    @include md {
+        height: 460px;
+    }
+
+    @include lg {
+        height: 580px;
+    }
+
+    @include xl {
+        height: 560px;
+    }
+}
+
+.swiper-container {
+    &:hover {
+        cursor: grab;
+    }
+
+    &:active {
+        cursor: grabbing;
+    }
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 359px) {
+        height: 540px;
+    }
+
+    @media screen and (min-width:360px) and (max-width: $xs) {
+        height: 490px;
+    }
+
+    @media screen and (min-width: $NOTxs) and (max-width: $sm) {
+        height: 440px;
+    }
+
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        height: 440px;
+    }
+
+    @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+        height: 560px;
+    }
+
+    @media screen and (min-width: $xl) {
+        height: 540px;
+    }
+
+    &.de {
+        @include swipeDeNl;
+    }
+
+    &.nl {
+        @include swipeDeNl;
+    }
+}
+
+.swiper-slide {
+    flex-direction: column;
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    img {
+        width: 88px;
+        height: 88px;
+        border-radius: 90px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+
+    .slide-content {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        @media screen and (max-width: $NOTlg) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.swiper-button-next {
+    background-image: url(../images/arrow-right.svg);
+    width: 34px;
+    height: 34px;
+    background-size: 32px 44px;
+
+    @media(prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
+
+    &:hover {
+        background-image: url(../images/arrow-right-hover.svg);
+    }
+}
+
+.swiper-button-prev {
+    background-image: url(../images/arrow-left.svg);
+    width: 34px;
+    height: 34px;
+    background-size: 32px 44px;
+
+    @media(prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
+
+    &:hover {
+        background-image: url(../images/arrow-left-hover.svg);
+    }
+}
+
+.swiper-pagination-bullet {
+    background: getColor(low-border);
+    opacity: 1;
+    width: 6px;
+    height: 6px;
+
+    &:hover {
+        background: getColor(primary-lighter);
+    }
+
+    &.swiper-pagination-bullet-active {
+        background: getColor(primary-base);
+
+        &:hover {
+            background: getColor(primary-base);
+        }
+    }
+}

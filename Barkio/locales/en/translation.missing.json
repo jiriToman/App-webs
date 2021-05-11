@@ -1,0 +1,310 @@
+{
+  "header": {
+    "h1": "header.h1",
+    "description": "header.description",
+    "h2": "header.h2",
+    "other": "header.other",
+    "h2form": "header.h2form",
+    "download": "header.download",
+    "txtform": "header.txtform",
+    "linkform": "header.linkform",
+    "overlaycss": "header.overlaycss",
+    "platforms": "header.platforms",
+    "modalplatforms": "header.modalplatforms"
+  },
+  "home": {
+    "lang": "home.lang",
+    "description": "home.description",
+    "title": "home.title",
+    "locale": "home.locale",
+    "alternate1": "home.alternate1",
+    "alternate2": "home.alternate2",
+    "ogurl": "home.ogurl",
+    "canonical": "home.canonical",
+    "og": "home.og"
+  },
+  "key-to-translate": "key-to-translate",
+  "index": "index",
+  "route": {
+    "one": "route.one"
+  },
+  "menu": {
+    "separation": "menu.separation",
+    "blog": "menu.blog",
+    "support": "menu.support",
+    "sale": "menu.sale",
+    "saleform": "menu.saleform",
+    "fb": "menu.fb"
+  },
+  "reasons": {
+    "h3": "reasons.h3",
+    "h4": "reasons.h4",
+    "separation": {
+      "h4": "reasons.separation.h4",
+      "txt": "reasons.separation.txt",
+      "txt1": "reasons.separation.txt1",
+      "txta": "reasons.separation.txta",
+      "txt2": "reasons.separation.txt2",
+      "link": "reasons.separation.link"
+    },
+    "watch": {
+      "h4": "reasons.watch.h4",
+      "txt": "reasons.watch.txt"
+    },
+    "track": {
+      "h4": "reasons.track.h4",
+      "txt": "reasons.track.txt"
+    },
+    "nohw": {
+      "h4": "reasons.nohw.h4",
+      "txt": "reasons.nohw.txt"
+    },
+    "h2": "reasons.h2",
+    "hd": {
+      "txt": "reasons.hd.txt"
+    },
+    "invite": {
+      "txt": "reasons.invite.txt"
+    }
+  },
+  "features": {
+    "h2": "features.h2",
+    "h3": "features.h3",
+    "hd": {
+      "h4": "features.hd.h4",
+      "txt": "features.hd.txt"
+    },
+    "talk": {
+      "h4": "features.talk.h4",
+      "txt": "features.talk.txt"
+    },
+    "check": {
+      "h4": "features.check.h4",
+      "txt": "features.check.txt"
+    },
+    "invite": {
+      "h4": "features.invite.h4",
+      "txt": "features.invite.txt"
+    },
+    "reach": {
+      "h4": "features.reach.h4",
+      "txt": "features.reach.txt"
+    },
+    "choose": {
+      "h4": "features.choose.h4",
+      "txt": "features.choose.txt"
+    },
+    "banner": {
+      "h4": "features.banner.h4",
+      "txt": "features.banner.txt"
+    }
+  },
+  "testimonials": {
+    "first": {
+      "h2": "testimonials.first.h2",
+      "txt": "testimonials.first.txt",
+      "signature": "testimonials.first.signature"
+    },
+    "second": {
+      "h2": "testimonials.second.h2",
+      "txt": "testimonials.second.txt",
+      "signature": "testimonials.second.signature"
+    },
+    "third": {
+      "h2": "testimonials.third.h2",
+      "txt": "testimonials.third.txt",
+      "signature": "testimonials.third.signature"
+    }
+  },
+  "platforms": {
+    "ios": "platforms.ios",
+    "win": "platforms.win",
+    "mac": "platforms.mac",
+    "lnx": "platforms.lnx",
+    "and": "platforms.and",
+    "now": "platforms.now",
+    "ioslink": "platforms.ioslink",
+    "andlink": "platforms.andlink",
+    "1mobh5": "platforms.1mobh5",
+    "2mobh5": "platforms.2mobh5",
+    "appStore": "platforms.appStore",
+    "GooglePlay": "platforms.GooglePlay",
+    "available": "platforms.available",
+    "maclink": "platforms.maclink",
+    "winlink": "platforms.winlink",
+    "a": "platforms.a",
+    "lnxlink": "platforms.lnxlink",
+    "now2": "platforms.now2"
+  },
+  "modalplatforms": {
+    "h4": "modalplatforms.h4",
+    "txt": "modalplatforms.txt",
+    "form": {
+      "h2": "modalplatforms.form.h2",
+      "txt1": "modalplatforms.form.txt1",
+      "1h4": "modalplatforms.form.1h4",
+      "txt1mob": "modalplatforms.form.txt1mob"
+    },
+    "form-msg": {
+      "success": "modalplatforms.form-msg.success",
+      "error": "modalplatforms.form-msg.error",
+      "email": "modalplatforms.form-msg.email",
+      "success1": "modalplatforms.form-msg.success1",
+      "success2": "modalplatforms.form-msg.success2"
+    },
+    "1mobh5": "modalplatforms.1mobh5",
+    "2mobh5": "modalplatforms.2mobh5",
+    "mac": "modalplatforms.mac",
+    "win": "platforms.win",
+    "lnx": "platforms.lnx"
+  },
+  "footer": {
+    "trybanner": {
+      "h4": "footer.trybanner.h4",
+      "txt": "footer.trybanner.txt"
+    },
+    "doclinks": {
+      "privacy": "footer.doclinks.privacy",
+      "tos": "footer.doclinks.tos",
+      "preskit": "footer.doclinks.preskit",
+      "copytd": "footer.doclinks.copytd",
+      "presskitlink": "footer.doclinks.presskitlink",
+      "preskitlink": "footer.doclinks.preskitlink",
+      "privacylink": "footer.doclinks.privacylink",
+      "toslink": "footer.doclinks.toslink"
+    },
+    "copyus": "footer.copyus",
+    "contactus": "footer.contactus"
+  },
+  "modalcomingsoonios": {
+    "h4": "modalcomingsoonios.h4",
+    "txt": "modalcomingsoonios.txt"
+  },
+  "comparison": "comparison",
+  "download": "download",
+  "downloadthx": "downloadthx",
+  "down": "down",
+  "downpages": {
+    "download": {
+      "h1": "downpages.download.h1",
+      "h2": "downpages.download.h2",
+      "1h4": "downpages.download.1h4",
+      "1txt": "downpages.download.1txt",
+      "2h4": "downpages.download.2h4",
+      "2txt": "downpages.download.2txt"
+    },
+    "maclg": "downpages.maclg",
+    "winlg": "downpages.winlg",
+    "lnxlg": "downpages.lnxlg",
+    "downloadthx": {
+      "h1": "downpages.downloadthx.h1",
+      "h2": "downpages.downloadthx.h2",
+      "banner": "downpages.downloadthx.banner",
+      "repeattxt": "downpages.downloadthx.repeattxt",
+      "link": "downpages.downloadthx.link"
+    }
+  },
+  "comparison-page": {
+    "h1": "comparison-page.h1",
+    "h2": "comparison-page.h2",
+    "1mobile": {
+      "h": "comparison-page.1mobile.h",
+      "dm": "comparison-page.1mobile.dm",
+      "barkio": "comparison-page.1mobile.barkio"
+    },
+    "2desktop": {
+      "h": "comparison-page.2desktop.h",
+      "dm": "comparison-page.2desktop.dm",
+      "barkio": "comparison-page.2desktop.barkio"
+    },
+    "3pricing": {
+      "h": "comparison-page.3pricing.h",
+      "dm": "comparison-page.3pricing.dm",
+      "barkio": "comparison-page.3pricing.barkio"
+    },
+    "4download": {
+      "h": "comparison-page.4download.h",
+      "dm": "comparison-page.4download.dm",
+      "barkio": "comparison-page.4download.barkio"
+    },
+    "5video": {
+      "h": "comparison-page.5video.h"
+    },
+    "6audio": {
+      "h": "comparison-page.6audio.h"
+    },
+    "7personstations": {
+      "h": "comparison-page.7personstations.h"
+    },
+    "8dogstations": {
+      "h": "comparison-page.8dogstations.h",
+      "barkio": "comparison-page.8dogstations.barkio"
+    },
+    "9alog": {
+      "h": "comparison-page.9alog.h"
+    },
+    "10graphs": {
+      "h": "comparison-page.10graphs.h",
+      "barkio": "comparison-page.10graphs.barkio"
+    },
+    "11commands": {
+      "h": "comparison-page.11commands.h"
+    },
+    "12syncommands": {
+      "h": "comparison-page.12syncommands.h"
+    },
+    "13twoway": {
+      "h": "comparison-page.13twoway.h"
+    },
+    "14powersave": {
+      "h": "comparison-page.14powersave.h"
+    },
+    "15background": {
+      "h": "comparison-page.15background.h"
+    },
+    "16talk": {
+      "h": "comparison-page.16talk.h"
+    },
+    "17profile": {
+      "h": "comparison-page.17profile.h"
+    },
+    "18notify": {
+      "h": "comparison-page.18notify.h"
+    },
+    "dm-button": "comparison-page.dm-button",
+    "bark-button": "comparison-page.bark-button"
+  },
+  "comparisonpage": {
+    "dm-button": "comparisonpage.dm-button",
+    "bark-button": "comparisonpage.bark-button"
+  },
+  "pricing": {
+    "offer_20_off": {
+      "title": "pricing.offer_20_off.title",
+      "subtitle": "pricing.offer_20_off.subtitle"
+    },
+    "black_friday": {
+      "title": "pricing.black_friday.title",
+      "subtitle": "pricing.black_friday.subtitle",
+      "countTo": "pricing.black_friday.countTo",
+      "notReady": "pricing.black_friday.notReady",
+      "expired": "pricing.black_friday.expired",
+      "countFrom": "pricing.black_friday.countFrom",
+      "boxheader": "pricing.black_friday.boxheader",
+      "button": "pricing.black_friday.button",
+      "explainer": "pricing.black_friday.explainer"
+    },
+    "offer_21_off": {
+      "title2": "pricing.offer_21_off.title2"
+    }
+  },
+  "countdown": {
+    "days": "countdown.days",
+    "hours": "countdown.hours",
+    "seconds": "countdown.seconds",
+    "minutes": "countdown.minutes"
+  },
+  "promotion": {
+    "learnmore": "promotion.learnmore"
+  }
+}

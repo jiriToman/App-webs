@@ -1,0 +1,233 @@
+// main: ../main.scss
+#phone {
+    // background-image: url('../images/bg-header@2x.jpg');
+    // @media(prefers-color-scheme: dark) {
+    //     background-image: url('../images/bg-header@2x.jpg');
+    // }
+    // background-repeat: no-repeat;
+    // background-attachment: local;
+    // background-size: auto 100%;
+    &:before {
+        // content: url('../images/bg-header@2x.jpg');
+        content: "";
+        background-image: url('../images/bg-header@2x.jpg');
+        @media(prefers-color-scheme: dark) {
+            background-image: url('../images/bg-header-dark@2x.jpg');
+        }
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        width: 150%;
+        position: absolute;
+        top: 0;
+        left: -100px;
+        @media screen and (min-width:$lg) {
+            left: -160px;
+        }
+        @media screen and (min-width:400px) and (max-width:$sm) {
+            left: -150px;
+        }
+        z-index: -1;
+    }
+    padding: 0px;
+    overflow: visible;
+    position: relative;
+    @media screen and (max-width: $sm) {
+        padding: 0px !important;
+        max-width: auto;
+    }
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        min-width: 270px;
+        margin: 0px;
+        min-height: 522px;
+        margin-bottom: 0px !important;
+        margin-top: 1.5rem !important;
+    }
+    #device-frame {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        // left: 28%;
+        // @media screen and (min-width: 1601) {
+        //     left: 50%;
+        // }
+        // @media screen and (max-width: $xs) {
+        //     display: flex;
+        //     justify-content: center;
+        //     left: auto;
+        // }
+        img {
+            width: 268px;
+            height: 500px;
+            @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+                width: 295px;
+                height: 551px;
+            }
+            @media screen and (min-width: $xl) {
+                width: 334px;
+                height: 624px;
+            }
+        }
+    }
+    #soothe-bubble {
+        z-index: 11;
+        position: absolute;
+        top: 70%;
+        left: -4%;
+        @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+            top: 390px;
+            left: -100px;
+        }
+        @media screen and (min-width: $xl) {
+            top: 455px;
+            left: -62px;
+        }
+    }
+    #nvideo-bubble {
+        z-index: 11;
+        position: absolute;
+        top: 1%;
+        left: 75%;
+        @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+            width: 197px;
+            height: 121px;
+            top: 12px;
+            left: 300px;
+        }
+        @media screen and (min-width: $xl) {
+            top: 12px;
+            left: 376px;
+        }
+    }
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     background: url('../images/video-night.svg') no-repeat 190px 0%;
+    //     // background: url('../images/video-night.svg') no-repeat 190px 0%, url('../images/hear-sooth.svg') no-repeat -190px 85%;
+    //     width: 100%;
+    //     height: 100%;
+    //     left: 0px;
+    //     top: 0px;
+    //     position: absolute;
+    //     z-index: 11;
+    //     overflow: visible !important;
+    // }
+}
+
+#overlay {
+    position: relative;
+    margin: auto;
+    width: 293px;
+    display: block;
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        width: 293px;
+    }
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     background: url('../images/video-night.svg') no-repeat top right, url('../images/hear-sooth.svg') no-repeat bottom left;
+    //     width: 300px;
+    //     height: 542px;
+    //     left: 0px;
+    //     top: 0px;
+    //     position: absolute;
+    //     z-index: 10;
+    //     // @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+    //     //     width: 270px;
+    //     //     height: 542px;
+    //     //     background: url('../images/video') no-repeat top left transparent;
+    //     //     background-size: 270px 505px;
+    //     // }
+    //     // @media screen and (min-width: $lg) {
+    //     //     background: url('../images/device@2x.png') no-repeat top left transparent;
+    //     //     background-size: 280px 545px;
+    //     // }
+    // }
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     background: url('../images/device.png') no-repeat top left transparent;
+    //     width: 292px;
+    //     height: 542px;
+    //     left: 0px;
+    //     top: 0px;
+    //     position: absolute;
+    //     z-index: 10;
+    //     @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+    //         width: 270px;
+    //         height: 542px;
+    //         background: url('../images/device@2x.png') no-repeat top left transparent;
+    //         background-size: 270px 505px;
+    //     }
+    //     @media screen and (min-width: $lg) {
+    //         background: url('../images/device@2x.png') no-repeat top left transparent;
+    //         background-size: 280px 545px;
+    //     }
+    // }
+    video {
+        // position: absolute;
+        // top: 21px;
+        // /* Adjust top position */
+        // left: 30px;
+        // /* Adjust left position */
+        // width: 229px;
+        // height: 485px;
+        // z-index: 5;
+        // border-radius: 30px;
+        // @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        //     width: 268px;
+        //     height: 445px;
+        //     left: 0px;
+        //     border-radius: 30px;
+        // }
+        width: 293px;
+        height: 543px;
+        position: flex;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+// #overlaycs {
+//     position: relative;
+//     margin: auto;
+//     width: 292px;
+//     display: block;
+//     @media screen and (min-width: $NOTsm) and (max-width: $lg) {
+//         width: 270px;
+//     }
+//     &:after {
+//         content: '';
+//         display: block;
+//         background: url('../images/device.png') no-repeat top left transparent;
+//         width: 292px;
+//         height: 542px;
+//         left: 0px;
+//         top: 0px;
+//         position: absolute;
+//         z-index: 10;
+//         @media screen and (min-width: $NOTsm) and (max-width: $lg) {
+//             width: 270px;
+//             height: 542px;
+//             background: url('../images/devicemd.png') no-repeat top left transparent;
+//         }
+//     }
+//     video {
+//         position: absolute;
+//         top: 21px;
+//         /* Adjust top position */
+//         left: 30px;
+//         /* Adjust left position */
+//         width: 229px;
+//         height: 485px;
+//         z-index: 5;
+//         border-radius: 30px;
+//         @media screen and (min-width: $NOTsm) and (max-width: $lg) {
+//             width: 268px;
+//             height: 445px;
+//             left: 0px;
+//             border-radius: 30px;
+//         }
+//     }
+// }

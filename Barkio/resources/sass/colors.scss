@@ -1,0 +1,46 @@
+// main: main.scss
+$primary-base: #58a509;
+$primary-darker: #409100;
+$primary-lighter: #6eb918;
+$warning-base: #ff4f41;
+$tint1-base: #fa4863;
+$tint2-base: #fab500;
+$tint3-base: #4285f4;
+$on-primary-white: #ffffff;
+$on-primary-medium: rgba(255, 255, 255, 0.7);
+$on-primary-low: rgba(255, 255, 255, 0.2);
+$medium-border: rgba(0, 0, 0, 0.12);
+$card-background: rgba(255, 255, 255, 0.04);
+$light-background: rgba(143, 109, 245, 0.04);
+// color schemas
+$colors: (high-emphasis: rgb(0, 0, 0), medium-emphasis: rgba(0, 0, 0, 0.54), low-emphasis: rgba(0, 0, 0, 0.38), high-border: rgba(0, 0, 0, 0.2), medium-border: rgba(0, 0, 0, 0.12), low-border: rgba(0, 0, 0, 0.08), light-background: rgba(0, 0, 0, 0.04), surface: #ffffff, surface-elevated: #ffffff, light-02: rgba(255, 255, 255, 0.2), light-07: rgba(255, 255, 255, 0.7), primary-base: #58a509, primary-darker: #409100, primary-lighter: #6eb918, primary-transparent: rgba(88, 165, 9, 0.12), secondary-base: #825f5f, secondary-darker: #775656, secondary-lighter: #937877, secondary-transparent: rgba(119, 86, 86, 0.12), warning-base: #ff4f41, warning-lighter: #ff6e64, tint1-base: #fa4863, tint2-base: #fab500, tint3-base: #4285f4, );
+//dark theme
+$colors-dark: (high-emphasis: rgba(255, 255, 255, 1), medium-emphasis: rgba(255, 255, 255, 0.6), low-emphasis: rgba(255, 255, 255, 0.4), high-border: rgba(255, 255, 255, 0.28), medium-border: rgba(255, 255, 255, 0.2), low-border: rgba(255, 255, 255, 0.16), light-background: rgba(255, 255, 255, 0.04), surface: #121212, surface-elevated: #2e2e2e, light-02: rgba(255, 255, 255, 0.98), light-07: rgba(255, 255, 255, 0.93), primary-base: #409100, primary-darker: #3b8500, primary-lighter: #58a509, primary-transparent: rgba(64, 145, 0, 0.24), secondary-base: #825f5f, secondary-darker: #775656, secondary-lighter: #937877, secondary-transparent: rgba(130, 95, 95, 0.28), warning-base: #fb594c, warning-lighter: #ff6e64, tint1-base: #fa4863, tint2-base: #d8972b, tint3-base: #0083c2, );
+:root {
+    @each $name,
+    $color in $colors {
+        --color-#{$name}: #{$color};
+    }
+    --theme: "light";
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        @each $name,
+        $color in $colors-dark {
+            --color-#{$name}: #{$color};
+        }
+        --theme: "dark";
+    }
+}
+
+// //creating a function to get color instead of using css varible
+@function getColor($color-name) {
+    @return var(--color-#{$color-name});
+}
+
+// body {
+//     font-family: 'Inter', sans-serif;
+//     font-size: 16px;
+//     color: getColor(mediumEmphasis);
+//     background-color: getColor(surface);

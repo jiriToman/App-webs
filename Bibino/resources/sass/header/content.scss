@@ -1,0 +1,147 @@
+    // main: ../main.scss
+    header {
+        @media screen and (max-width: $NOTlg) {
+            overflow: hidden;
+        }
+        @extend %section;
+        @media screen and (min-width: $lg)and (max-width: $NOTxl) {
+            padding-top: 104px !important;
+            padding-bottom: 64px !important;
+        }
+        @media screen and (min-width: $xl) {
+            padding-top: 128px !important;
+        }
+    }
+    
+    .overflow-xl {
+        @media screen and (min-width: $lg) {
+            overflow: hidden;
+        }
+    }
+    
+    #headings {
+        margin: 0%;
+        padding: 0%;
+        @media screen and (min-width: $xl) {
+            padding-bottom: 40px;
+        }
+        @media screen and (max-width: $NOTxl) {
+            padding-bottom: 32px;
+        }
+    }
+    
+    .platformsvg {
+        vertical-align: bottom;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        margin-right: 12px;
+        &.apple {
+            vertical-align: text-bottom;
+        }
+    }
+    
+    #platforms {
+        @media screen and (max-width: $sm) {
+            padding-bottom: 32px !important;
+        }
+    }
+    
+    .storebtns {
+        padding: 0%;
+        padding-bottom: 12px;
+        @media screen and (min-width: $NOTxs) {
+            padding-bottom: 16px;
+        }
+        .ablock {
+            display: flex;
+            width: 336px;
+            @media screen and (max-width: $sm) {
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+            @media screen and (max-width: 336pc) {
+                width: 280px;
+            }
+        }
+        #main {
+            @media screen and (min-width: $xl) {
+                // margin-bottom: 58px !important;
+                margin-top: 26px !important;
+            }
+            @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+                // margin-bottom: 11px !important;
+                // margin-top: 11px !important;
+            }
+        }
+    }
+    
+    // SUBSCRIBE PAGE
+    .dark-outline {
+        display: block;
+        &:first-child {
+            margin-left: 0px;
+        }
+        margin-left: 16px;
+        @media screen and (max-width: $sm) {
+            margin-left: 0px;
+        }
+    }
+    
+    #appstore-img,
+    #googleplay-img,
+    #mobile-modal-app-store,
+    #mobile-modal-google-play,
+    #download-app-store,
+    #download-google-play {
+        @media(prefers-color-scheme: dark) {
+            padding: 1px;
+            background-color: getColor(low-border);
+            border-radius: 7px;
+        }
+    }
+    
+    .bonush {
+        margin-bottom: 16px;
+        h2 {
+            text-align: left;
+            @media screen and (max-width: $sm) {
+                text-align: center;
+            }
+        }
+    }
+    
+    .dark-col {
+        color: getColor(primary-base) !important;
+        font-weight: 700 !important;
+    }
+    
+    .header-two {
+        &.nl {
+            display: none;
+            &.II {
+                display: block;
+            }
+        }
+        &.de {
+            display: none;
+        }
+        &.en {
+            &.II {
+                display: none;
+            }
+        }
+    }
+    
+    #banner-special-promo {
+        border-radius: 16px;
+        margin-bottom: 16px;
+        border: 1px solid getColor(low-border);
+        width: 487px;
+        transition: all 0.3s;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }

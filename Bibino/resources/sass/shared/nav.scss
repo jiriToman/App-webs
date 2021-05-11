@@ -1,0 +1,170 @@
+// main: ../main.scss
+.mdxl-hidden {
+    @media only screen and (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+nav {
+    margin-top: 0%;
+    padding-top: 0%;
+    @media screen and (max-width: $NOTlg) {
+        li {
+            .nav-link {
+                padding: 0%;
+                margin: 0%;
+            }
+            padding-bottom: 40px;
+            margin: 0%;
+        }
+    }
+    @media only screen and (min-width: $NOTlg) {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+    }
+    a {
+        outline: none;
+    }
+    .container {
+        @media only screen and (min-width: $lg) {
+            height: 40px;
+        }
+    }
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    background-color: getColor(surface);
+    padding: 0%;
+    @media only screen and (min-width: $lg) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        button {
+            display: none;
+        }
+    }
+    &.navbar-expand-md .container {
+        @media screen and (max-width: $NOTlg) {
+            padding-right: 0;
+        }
+    }
+    @media screen and (max-width: $lg) {
+        border-bottom: 1px solid getColor(low-border);
+    }
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.nav-item {
+    @media only screen and (min-width: $lg) {
+        align-self: center;
+    }
+}
+
+.navbar-nav {
+    @media only screen and (max-width: $NOTlg) {
+        text-align: center;
+        margin-top: 16px;
+        margin-right: 16px;
+    }
+    @media only screen and (min-width: $lg) {
+        height: 40px;
+    }
+    li.nav-item {
+        &:nth-child(6) {
+            a.nav-link {
+                @media screen and (min-width: $lg) {
+                    padding-right: 0px !important;
+                }
+            }
+        }
+    }
+    a.nav-link {
+        @media screen and (min-width: $NOTlg) {
+            padding-right: 16px !important;
+            padding-left: 16px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+    }
+}
+
+#logo {
+    padding: 0%;
+    margin: 0%;
+    img {
+        width: 110px;
+        height: 32px;
+        @media screen and(max-width: $xs) {
+            width: 84px;
+            height: 24px;
+        }
+    }
+}
+
+#menubtn {
+    background-color: getColor(surface);
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#menuicon {
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1.12);
+    }
+}
+
+#menuimg {
+    height: 24px;
+    @media screen and (min-width: $lg) {
+        height: 32px;
+    }
+}
+
+#menu-try {
+    @media screen and (min-width: $lg) {
+        margin: auto;
+        margin-left: 16px;
+    }
+    @media screen and (min-width: $lg) {
+        display: none;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+#menu-fb {
+    svg {
+        display: inline;
+        margin-right: 8px;
+        @media screen and (min-width: $lg) {
+            margin-right: 0;
+        }
+    }
+}
+
+#holiday-21 {
+    background-color: getColor(warning-base);
+    border-radius: 12px;
+    padding: 4px 6px 3px;
+    font-size: 10px !important;
+    font-weight: 500;
+    vertical-align: middle;
+    color: getColor(high-emphasis);
+}

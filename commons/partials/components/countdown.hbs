@@ -1,0 +1,78 @@
+<div class="col col-md-4">
+    <div id="countdown" class="">
+        <div class="clock">
+
+           
+
+            
+            <p id="dnum">00</p><p id="dvojt1">&nbsp;:&nbsp;</p><p id="hnum">00</p><p id="dvojt2">&nbsp;:&nbsp;</p><p id="mnum">00</p><p id="dvojt3">&nbsp;:&nbsp;</p><p id="snum">00</p>
+
+        <noscript>
+            <h2 id='dateLimit' class="count-header">Expiration limit: {{i18next (txtmerge "pricing." @root.promotion ".countTo") @root.lang }}</h2>
+        </noscript>
+    </div>
+    <div class="hidden">
+        <p id="countdown-days">{{i18next "countdown.days" @root.lang }}</p>
+        <p id="countdown-hours">{{i18next "countdown.hours" @root.lang }}</p>
+        <p id="countdown-seconds">{{i18next "countdown.seconds" @root.lang }}</p>
+        <p id="countdown-minutes">{{i18next "countdown.minutes" @root.lang }}</p>
+        <p id="countdown-notReady">{{i18next (txtmerge "pricing." @root.promotion ".notReady") @root.lang}}</p>
+        <p id="countdown-expired">{{i18next (txtmerge "pricing." @root.promotion ".expired") @root.lang }}</p>
+        <p id="countdown-count-from">{{i18next (txtmerge "pricing." @root.promotion ".countFrom") @root.lang }}</p>
+         <p id="countdown-count-end">{{i18next (txtmerge "pricing." @root.promotion ".countTo") @root.lang }}</p>
+           </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var dateFrom =document.getElementById("countdown-count-from").innerHTML;
+var date =document.getElementById("countdown-count-end").innerHTML;
+console.log('datum start:'+dateFrom+' datum konec: '+date);
+var countDownDate = new Date(date).getTime();
+var secString =document.getElementById("countdown-seconds").innerHTML;
+var minString =document.getElementById("countdown-minutes").innerHTML;
+var hourString =document.getElementById("countdown-hours").innerHTML;
+var dayString =document.getElementById("countdown-days").innerHTML;
+// Update the count down every 1 second
+var x = setInterval(function () {
+  $(".clock").removeClass("hidden");
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  function dnuly(cas){
+      if (10>cas){
+          return "0"+cas;
+      }else return cas;
+  }
+
+  // Display the result in the element with id="countdown"
+  document.getElementById("dnum").innerHTML = dnuly(days)+'<label>'+dayString+'</label>';
+  document.getElementById("hnum").innerHTML = dnuly(hours)+'<label>'+hourString+'</label>';
+  document.getElementById("mnum").innerHTML = dnuly(minutes)+'<label>'+minString+'</label>';
+  document.getElementById("snum").innerHTML = dnuly(seconds)+'<label>'+secString+'</label>';
+  document.getElementById("dvojt1").innerHTML = '&nbsp;:&nbsp;<label>&nbsp;&nbsp;&nbsp;</label>';
+  document.getElementById("dvojt2").innerHTML = '&nbsp;:&nbsp;<label>&nbsp;&nbsp;&nbsp;</label>';
+  document.getElementById("dvojt3").innerHTML = '&nbsp;:&nbsp;<label>&nbsp;&nbsp;&nbsp;</label>';
+ 
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    var countEle=document.getElementById("countdown");
+    countEle.classList.add("hidden");
+    //document.getElementById("button-container-1").innerHTML = "<p>EXPIRED</p>";
+    //document.getElementById("button-container-2").innerHTML = "<p>EXPIRED</p>";
+    //document.getElementById("button-container-3").innerHTML = "<p>EXPIRED</p>";
+  }
+}, 1000);
+
+</script>

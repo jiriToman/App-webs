@@ -1,0 +1,616 @@
+// main: main.scss
+$h1-font-sizes: ("xs": 32px, "sm": 32px, "md": 40px, "lg": 40px, "xl": 56px);
+$h1-line-heights: ("xs": 1.19, "sm": 1.19, "md": 1.2, "lg": 1.2, "xl": 1.14);
+$h2-font-sizes: ("xs": 24px, "sm": 24px, "md": 32px, "lg": 32px, "xl": 40px);
+$h2-line-heights: ("xs": 1.33, "sm": 1.33, "md": 1.25, "lg": 1.25, "xl": 1.2);
+$subheader-font-sizes: ("xs": 20px, "sm": 20px, "md": 24px, "lg": 24px, "xl": 28px);
+$subheader-line-heights: ("xs": 1.19, "sm": 1.19, "md": 1.33, "lg": 1.33, "xl": 1.29);
+$h3-font-sizes: ("xs": 24px, "sm": 24px, "md": 24px, "lg": 40px, "xl": 40px); //h3 na blogu 
+$h3-line-heights: ("xs": 1.2, "sm": 1.2, "md": 1.2, "lg": 1.2, "xl": 1.2);
+$h4-font-sizes: ("xs": 16px, "sm": 16px, "md": 20px, "lg": 20px, "xl": 20px);
+$h4-line-heights: ("xs": 1.5, "sm": 1.5, "md": 1.5, "lg": 1.5, "xl": 1.5);
+$p-font-sizes: ("xs": 16px, "sm": 16px, "md": 16px, "lg": 18px, "xl": 18px); // vyjimky .modal-content:16px/sm/18px .mod-icons:16px/lg/18px/xl/20px blockquote:24px/vsude
+$p-line-heights: ("xs": 1.5, "sm": 1.5, "md": 1.5, "lg": 1.5, "xl": 1.5); // vyjimky .modal-content:1.5/sm/1.78 .mod-icons:1.5/lg/1.78/xl/1.6 .others:1.75/lg/1.4
+$a-font-sizes: ("xs": 16px, "sm": 16px, "md": 16px, "lg": 18px, "xl": 18px); // vyjimky nav:20px/sm/16px footer 16px/vsude
+$a-line-heights: ("xs": 1.5, "sm": 1.5, "md": 1.5, "lg": 1.5, "xl": 1.5); //vyjimky .others:1.75/lg/1.4
+// h5 neni zatim pouzite
+$h5-font-sizes: ("xs": 20px, "sm": 20px, "md": 20px, "lg": 20px, "xl": 20px);
+$h5-line-heights: ("xs": 1.2, "sm": 1.2, "md": 1.2, "lg": 1.2, "xl": 1.2);
+//$fs-p-blockquote:24px
+//$fs-others:
+@mixin typography($type-font-sizes, $type-line-heights) {
+    @include xs {
+        font-size: map-get($type-font-sizes, "xs");
+        line-height: map-get($type-line-heights, "xs");
+    }
+    @include sm {
+        font-size: map-get($type-font-sizes, "sm");
+        line-height: map-get($type-line-heights, "sm");
+    }
+    @include md {
+        font-size: map-get($type-font-sizes, "md");
+        line-height: map-get($type-line-heights, "md");
+    }
+    @include lg {
+        font-size: map-get($type-font-sizes, "lg");
+        line-height: map-get($type-line-heights, "lg");
+    }
+    @include xl {
+        font-size: map-get($type-font-sizes, "lg");
+        line-height: map-get($type-line-heights, "lg");
+    }
+}
+
+@mixin heightInLines($number-of-lines, $type-font-sizes, $type-line-heights) {
+    @include xs {
+        height: $number-of-lines* map-get($type-font-sizes, "xs")* map-get($type-line-heights, "xs") !important;
+        max-height: $number-of-lines* map-get($type-font-sizes, "xs")* map-get($type-line-heights, "xs") !important;
+    }
+    @include sm {
+        height: $number-of-lines* map-get($type-font-sizes, "sm")* map-get($type-line-heights, "sm") !important;
+        max-height: $number-of-lines* map-get($type-font-sizes, "sm")* map-get($type-line-heights, "sm") !important;
+    }
+    @include md {
+        height: $number-of-lines* map-get($type-font-sizes, "md")* map-get($type-line-heights, "md") !important;
+        max-height: $number-of-lines* map-get($type-font-sizes, "md")* map-get($type-line-heights, "md") !important;
+    }
+    @include lg {
+        height: $number-of-lines* map-get($type-font-sizes, "lg")* map-get($type-line-heights, "lg") !important;
+        max-height: $number-of-lines* map-get($type-font-sizes, "lg")* map-get($type-line-heights, "lg") !important;
+    }
+    @include xl {
+        height: $number-of-lines* map-get($type-font-sizes, "xl")* map-get($type-line-heights, "xl") !important;
+        max-height: $number-of-lines* map-get($type-font-sizes, "xl")* map-get($type-line-heights, "xl") !important;
+    }
+}
+
+//---------------------sdilene casti---------------------------------------------------------------
+$fontN:'Nunito',
+sans-serif;
+$fontR:'Roboto',
+sans-serif;
+%fontN-shared {
+    color: getColor(high-emphasis);
+    font-family: $fontN;
+}
+
+%fontR-shared {
+    color: getColor(medium-emphasis);
+    font-family: $fontR;
+}
+
+%hII_sub {
+    @extend %fontR-shared;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 0px;
+    @media screen and (min-width: $NOTsm)and (max-width: $NOTxl) {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.33;
+        text-align: left;
+    }
+    @media screen and (min-width: $xl) {
+        font-weight: normal;
+        font-size: 28px;
+        text-align: left;
+        line-height: 1.29;
+    }
+}
+
+//---------------------Basic typography------------------------------------------------------------------------------------
+h1 {
+    @extend %fontN-shared;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.19;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $NOTsm) {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: $NOTsm)and (max-width: $NOTxl) {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+    @media screen and (min-width: $lg)and (max-width: $NOTxl) {
+        margin-bottom: 1rem;
+    }
+    @media screen and (min-width: $xl) {
+        font-size: 56px;
+        line-height: 1.14;
+        letter-spacing: -1.2px;
+    }
+}
+
+h2 {
+    @extend %fontN-shared;
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    text-align: center;
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTxl) {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: $xl) {
+        font-size: 40px;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: $lg) {}
+    //subheader
+    &.h-header {
+        @extend %hII_sub;
+    }
+}
+
+h3 {
+    @extend %fontN-shared;
+    // text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    @media screen and (min-width: $lg) {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+    }
+}
+
+h4 {
+    @extend %fontN-shared;
+    @include typography($h4-font-sizes, $h4-line-heights);
+    font-weight: 600;
+}
+
+h5 {
+    @extend %fontN-shared;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.subheader {
+    @extend %hII_sub;
+    @media screen and (min-width: $NOTsm)and (max-width: $NOTxl) {
+        text-align: center;
+    }
+    @media screen and (min-width: $xl) {
+        text-align: center;
+    }
+}
+
+@mixin p {
+    font-size: 16px;
+    @media screen and (min-width: $xl) {
+        font-size: 18px;
+    }
+    @extend %fontR-shared;
+    @media screen and (max-width: $xs) {
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+    }
+    &.whitep {
+        color: getColor(surface);
+    }
+    &.blackp {
+        color: getColor(high-emphasis);
+    }
+}
+
+p {
+    @include p;
+}
+
+a {
+    @extend %fontR-shared;
+    &:hover {
+        color: getColor(primary-base);
+    }
+}
+
+blockquote {
+    @extend %fontN-shared;
+    background-color: getColor(light-background);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1.25rem 1rem 0.5rem 1.5rem;
+    border-left: solid .5rem getColor(primary-base);
+    p {
+        font-size: 24px;
+        color: getColor(high-emphasis);
+    }
+}
+
+//---------------------sekce---------------------------------------------------------------
+// ========================================================================================
+.section {
+    @media screen and (min-width: $xl) {
+        font-size: 18px;
+    }
+}
+
+.reason {
+    p {
+        @media screen and (max-width: $xs) {
+            text-align: center;
+        }
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+// ---------------------------------------------features--------------------------------------
+.feature {
+    h3 {
+        @media screen and (max-width: $xs) {
+            color: getColor(medium-emphasis);
+            font-family: $fontR;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            text-align: left;
+            font-weight: normal;
+            font-size: 1rem;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            text-align: left;
+        }
+        @media screen and (min-width: $lg) {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+    }
+    p {
+        @extend %fontR-shared;
+        @media screen and (min-width: $lg) {
+            text-align: center;
+        }
+    }
+}
+
+#banner {
+    text-align: center;
+    color: getColor(light-07);
+    @media screen and (min-width: $NOTxs) and (max-width: $NOTlg) {}
+    h3 {
+        color: $on-primary-white;
+    }
+    p {
+        color: getColor(light-07);
+    }
+}
+
+//----------------------------------trynow - bottom section------------------------------------------
+#trysection {
+    text-align: center;
+    color: $on-primary-medium;
+    h3 {
+        color: $on-primary-white;
+        text-align: center;
+    }
+    a {
+        color: $on-primary-medium;
+        &:hover {
+            color: $on-primary-white;
+        }
+    }
+    p {
+        color: getColor(light-07);
+    }
+}
+
+//------------------------message-page---------------------------------------------------------------
+.msg {
+    h1 {
+        text-align: center !important;
+        @media screen and (min-width: $xl) {
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        @media only screen and (min-width: $lg) and (max-width: $NOTxl) {
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        @media screen and (min-width: $NOTxs) and (max-width: $sm) {
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        @media screen and (max-width: $xs) {
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    }
+    h2,
+    p {
+        text-align: center;
+    }
+}
+
+//---------------------menu---------------------------------------------------------------
+nav {
+    a {
+        @extend %fontR-shared;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        @media screen and (max-width: $xs) {
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: normal;
+        }
+        &:hover {
+            color: getColor(primary-base);
+            text-decoration: none;
+        }
+    }
+}
+
+.navbar {
+    @media only screen and (min-width: $lg) {
+        button {
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: 0.7px;
+        }
+    }
+}
+
+.others {
+    padding: 0%;
+    a {
+        color: getColor(low-emphasis);
+        font-family: $fontR;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: center;
+        display: block;
+        margin: auto;
+        text-decoration: none;
+        @media screen and (min-width: $NOTsm) {
+            text-align: left;
+        }
+        @media screen and (min-width: $lg) {
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: left;
+            margin: 0;
+            display: inline;
+            &:hover {
+                color: getColor(primary-base);
+            }
+        }
+    }
+    p {
+        color: getColor(low-emphasis);
+        font-family: $fontR;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: center;
+        display: block;
+        margin: auto;
+        @media screen and (min-width: $NOTsm) {
+            text-align: left;
+        }
+        @media screen and (min-width: $lg) {
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: left;
+            margin: 0;
+            display: inline;
+        }
+    }
+}
+
+//---------------------newsletter---------------------------------------------------------------
+.newsp {
+    // @extend %hII_sub;
+    @media screen and (max-width: $sm) {
+        text-align: center;
+    }
+}
+
+//---------------------testimony---------------------------------------------------------------
+#testimony {
+    @extend %fontR-shared;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    text-align: center;
+    @media screen and (min-width: $NOTxs) and (max-width: $sm) {
+        letter-spacing: 0.2px;
+    }
+    @media screen and (min-width: $lg) {
+        line-height: 1.78;
+        font-size: 18px;
+    }
+    .firstp {
+        font-style: italic;
+    }
+    .secondp {
+        color: getColor(low-emphasis);
+    }
+}
+
+//---------------------footer---------------------------------------------------------------
+footer {
+    text-align: left;
+    color: $on-primary-medium;
+    @media screen and (max-width: $xs) {
+        text-align: center
+    }
+    a {
+        font-family: $fontR;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        &:hover {
+            color: $on-primary-white;
+            text-decoration: none;
+        }
+        text-decoration: none;
+        @media screen and (max-width: $xs) {
+            line-height: 1.5;
+        }
+        @media screen and (min-width: $xl) {
+            line-height: 1.5;
+        }
+    }
+}
+
+#underline {
+    text-align: center;
+}
+
+#foot-end {
+    #copy {
+        @media screen and (min-width: $lg) {
+            text-align: left;
+        }
+    }
+    #foott {
+        a {
+            color: $on-primary-medium;
+            text-align: center;
+            &:hover {
+                color: $on-primary-white;
+                text-decoration: none;
+            }
+        }
+        p {
+            @media screen and (min-width: $lg) {
+                text-align: right;
+            }
+        }
+    }
+}
+
+//---------------------modal---------------------------------------------------------------
+.modal-content {
+    p {
+        @extend %fontR-shared;
+        font-size: 18px;
+        line-height: 1.78;
+        letter-spacing: 0.1px;
+        @media screen and (max-width: $xs) {
+            font-size: 1rem;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+    }
+    .mod-icons {
+        p {
+            @extend %fontN-shared;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            @media screen and (max-width: $NOTlg) {
+                font-size: 1rem;
+                line-height: 1.5;
+                font-weight: normal;
+            }
+            @media screen and(min-width:$lg) and (max-width: $NOTxl) {
+                font-size: 18px;
+                line-height: 1.78;
+                letter-spacing: 0.1px;
+            }
+        }
+    }
+}
+
+//---------------------comparison stranka-----------------------------------------------------
+#compare_table {
+    // thead {
+    //     th {}
+    //     td {}
+    // }
+    td {
+        @extend %fontR-shared;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: 0.44px;
+        text-align: center;
+        @media screen and(min-width: $lg) {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.12px;
+        }
+    }
+    th {
+        //bocni nadpis tabulky
+        @extend %fontN-shared;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: 0.15px;
+        @media screen and(min-width: $lg) {
+            font-size: 18px;
+            line-height: 1.33;
+            letter-spacing: 0.14px;
+        }
+    }
+}
+
+// =======================================PRICING===========================================
+.entry {
+    h3 {
+        @media screen and (max-width: $xs) {
+            color: getColor(medium-emphasis);
+            font-family: $fontN;
+            line-height: 1.5;
+            letter-spacing: 0.21px;
+            font-weight: 500;
+            // font-size: 1rem;
+        }
+        @media screen and (max-width: $sm) {
+            font-size: 20px;
+        }
+        @media screen and(min-width:$NOTxs) and (max-width: $sm) {
+            color: getColor(medium-emphasis);
+            font-family: $fontN;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            // font-size: 1rem;
+        }
+        @media screen and (min-width: $lg) {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+    }
+    h4 {
+        &.pduration {
+            font-weight: 800;
+        }
+        &.big-txt {
+            font-size: 32px;
+        }
+    }
+    p {
+        @extend %fontR-shared;
+        @media screen and (min-width: $lg) {
+            text-align: center;
+        }
+    }
+}

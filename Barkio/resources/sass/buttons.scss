@@ -1,0 +1,185 @@
+// main: main.scss
+//rewrite to variable overrides
+@mixin button {
+    transition: all 0.3s;
+    border-radius: 40px;
+    background-color: getColor(primary-base);
+    padding: 12px 24px;
+    border: none;
+    position: relative;
+    display: inline;
+    outline: none;
+    color: $on-primary-white !important;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-color: getColor(primary-lighter);
+        color: $on-primary-white;
+    }
+
+    &:active {
+        background-color: getColor(primary-darker);
+        color: $on-primary-white;
+    }
+
+    @media screen and (max-width: $sm) {
+        padding: 16px 24px;
+    }
+}
+
+@mixin invbtn {
+    background-color: $on-primary-white !important;
+    color: getColor(primary-base) !important;
+    padding: 16px 24px;
+}
+
+button {
+    @include button;
+}
+
+.buttonlink {
+    -webkit-appearance: none;
+    @include button;
+
+    &.invert {
+        @include invbtn;
+    }
+
+    &.inv_border {
+        @include invbtn;
+        border: 1px solid getColor(primary-base);
+    }
+
+    &.lg {
+        display: inline-flex;
+        padding: 16px 32px;
+        font-size: 18px;
+
+        @media screen and (max-width: $sm) {
+            margin: auto;
+            display: inline-block;
+            text-align: center;
+        }
+
+        @media screen and (min-width: $xl) {
+            padding: 24px 32px;
+            line-height: 1;
+        }
+
+        &.split_right {
+            padding-right: 16px;
+        }
+
+        &.dropdown-toggle-split {
+            padding-left: 12px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    margin: auto;
+}
+
+.join-banner {
+    -webkit-appearance: none;
+
+    &#email-confim-join-community {
+        font-weight: 700;
+    }
+
+    &:hover {
+        transition: all 0.3s;
+        background-color: rgba(183, 252, 105, 0.20)
+    }
+
+    display: inline-flex;
+    vertical-align: middle;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin-top: 32px;
+    background-color: rgba(102, 172, 22, 0.12);
+    color: getColor(primary-base) !important;
+    border-radius: 24px;
+    padding: 16px 16px;
+
+    @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: $xl) {
+        padding: 16px 24px;
+    }
+
+    svg {
+        display: inline-flex;
+        float: right;
+        margin-left: 8px;
+    }
+
+    p {
+        display: block;
+    }
+
+    &.formmsg {
+        &:hover {
+            transition: all 0.3s;
+            background-color: rgba(102, 172, 22, 0.12);
+        }
+    }
+
+    &.downloadthx {
+        color: getColor(high-emphasis) !important;
+        background-color: getColor(surface);
+        border: solid 2px getColor(medium-border);
+        border-radius: 32px;
+        text-decoration: none;
+
+        &:hover {
+            transition: all 0.3s;
+            background-color: getColor(light-background);
+        }
+
+        .firstsvg {
+            svg {
+                margin-right: 16px;
+                margin-left: 0;
+            }
+        }
+
+        svg {
+            color: getColor(medium-border);
+        }
+    }
+}
+
+#btnsvg {
+    display: inline-flex;
+    padding-top: 0;
+    float: right;
+    align-self: center;
+    margin-left: auto;
+}
+
+.btn-outline-primary {
+    border: solid 2px getColor(primary-transparent);
+    background-color: transparent;
+    color: getColor(primary-base) !important;
+
+    &:hover {
+        background-color: getColor(primary-transparent);
+        color: getColor(primary-base);
+        border: solid 2px getColor(primary-transparent);
+    }
+
+    &:not(:disabled):not(.disabled):active {
+        background-color: getColor(primary-transparent);
+        border-color: getColor(primary-base);
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem getColor(primary-transparent);
+        }
+    }
+}

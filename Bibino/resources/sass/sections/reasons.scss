@@ -1,0 +1,188 @@
+// main: ../main.scss
+#reasons {
+    background-color: getColor(light-background);
+    @extend %section;
+}
+
+.reason {
+    text-align: center;
+    @media screen and (max-width: $sm) {
+        padding-bottom: 32px;
+    }
+    @media screen and (min-width: $NOTsm) and (max-width:$NOTlg) {
+        padding-bottom: 96px;
+    }
+    @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+        padding-bottom: 120px;
+    }
+    @media screen and (min-width: $xl) {
+        padding-bottom: 140px;
+    }
+    svg {
+        @media screen and (max-width: $sm) {
+            padding-bottom: 16px;
+            margin: auto;
+            display: block;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width:$NOTlg) {
+            margin-bottom: 24px;
+        }
+        @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width: $xl) {
+            margin-bottom: 32px;
+        }
+    }
+    .dynamicsvg {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    p {
+        @media screen and (min-width: $lg) {
+            margin-bottom: 0;
+        }
+    }
+    &.last-sm {
+        @media screen and (max-width: $sm) {
+            padding-bottom: 0px;
+        }
+    }
+    &.last {
+        @media screen and (min-width: $NOTsm) {
+            padding-bottom: 0px;
+        }
+    }
+    .img-top-left {
+        border-radius: 0 !important;
+        position: absolute;
+        top: -54px;
+        left: -12px;
+        @media screen and (max-width: 420px) {
+            left: 0px;
+            top: -38px;
+        }
+        @media screen and (min-width: 421px) and(max-width:$xs) {
+            left: 0px;
+            top: -44px;
+        }
+        @media screen and (min-width:$NOTxs) and (max-width: $NOTlg) {
+            left: 0px;
+            top: -44px;
+        }
+        &.sm-right {
+            @media screen and (max-width: 420px) {
+                right: 12px;
+                left: unset;
+            }
+            @media screen and (min-width: 421px) and(max-width:$xs) {
+                right: 0px;
+                left: unset
+            }
+            @media screen and (min-width:$NOTxs) and (max-width: $sm) {
+                right: -6px;
+                left: unset;
+            }
+        }
+    }
+    .img-fluid {
+        border-radius: 24px;
+    }
+}
+
+#pic-zzz {
+    img {
+        width: 141px;
+        @media screen and (max-width: 420px) {
+            width: 81px;
+        }
+        @media screen and (min-width: 421px) and(max-width:$xs) {
+            width: 112px;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width:$NOTxl) {
+            width: 136px;
+        }
+    }
+}
+
+#pic-plane {
+    @media screen and (max-width: 420px) {
+        top: -48px;
+    }
+    @media screen and (min-width: 421px) and(max-width:$xs) {
+        top: -74px;
+    }
+    @media screen and (min-width:$NOTxs) and (max-width: $NOTxl) {
+        top: -84px;
+    }
+    @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+        left: 8px;
+    }
+    @media screen and (min-width: $xl) {
+        top: -100px;
+    }
+    img {
+        width: 308px;
+        @media screen and (max-width: 420px) {
+            width: 180px;
+        }
+        @media screen and (min-width: 421px) and(max-width:$xs) {
+            width: 264px;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width:$NOTxl) {
+            width: 303px;
+        }
+    }
+}
+
+#pic-camera {
+    img {
+        width: 143px;
+        @media screen and (max-width: 420px) {
+            width: 82px;
+        }
+        @media screen and (min-width: 421px) and(max-width:$xs) {
+            width: 114px;
+        }
+        @media screen and (min-width: $sm) and (max-width:$NOTxl) {
+            width: 138px;
+        }
+    }
+}
+
+#pic-signal {
+    @media screen and (max-width: 420px) {
+        left: 21%;
+    }
+    @media screen and (min-width: 421px) and(max-width:$xs) {
+        top: -64px;
+        left: 20%;
+    }
+    @media screen and (min-width: $NOTxs) and (max-width: $sm) {
+        left: 21%;
+        top: -74px;
+    }
+    @media screen and (min-width: $NOTsm) and (max-width:$NOTxl) {
+        left: 15%;
+    }
+    @media screen and (min-width: $NOTsm) {
+        top: -84px;
+    }
+    @media screen and (min-width: $lg) {
+        left: 18%;
+    }
+    img {
+        width: 133px;
+        @media screen and (max-width: 420px) {
+            width: 79px;
+        }
+        @media screen and (min-width: 421px) and(max-width:$xs) {
+            width: 106px;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width:$NOTxl) {
+            width: 133px;
+        }
+    }
+}

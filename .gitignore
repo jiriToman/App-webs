@@ -1,0 +1,8 @@
+# Node dependencies
+node_modules/
+.stringsgenrc
+.bothstrconfig
+jsonToNested.js
+.stringsgenrc-barkio
+.stringsgenrc-bibino
+captain-definition

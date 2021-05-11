@@ -1,0 +1,101 @@
+// main: ../main.scss
+#features {
+    @extend %section;
+}
+
+.feature {
+    margin-bottom: 24px;
+    @media screen and (max-width: 359px) {
+        padding: 0 9px;
+    }
+    @media screen and (min-width:360px) and (max-width: $sm) {
+        padding: 0 33px;
+    }
+    @media screen and (min-width:$NOTxs) and (max-width: $sm) {
+        padding: 0;
+        width: 50%;
+        display: block;
+    }
+    @media screen and (min-width: $NOTsm) and (max-width:$lg) {
+        padding: 0 9px;
+    }
+    @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+        margin-bottom: 72px;
+    }
+    @media screen and (min-width: $xl) {
+        margin-bottom: 88px;
+    }
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(6) {
+        @media screen and (min-width: $lg) {
+            margin-bottom: 0px;
+        }
+    }
+    &:nth-last-child(1):nth-child(odd) {
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            width: 100% !important;
+            max-width: 50% !important;
+            margin: auto;
+            flex: none !important;
+        }
+    }
+    &.last {
+        @media screen and (max-width: $xs) {
+            padding-bottom: 44px;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: $NOTxs) and (max-width:$NOTlg) {
+            padding-bottom: 84px !important;
+            margin-bottom: 0;
+        }
+    }
+    h4 {
+        @media screen and (max-width: $NOTlg) {}
+    }
+    p {
+        @media screen and (min-width: $lg) {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.f-inside {
+    vertical-align: middle;
+    display: inline-flex;
+    @media screen and (min-width: $NOTsm) {
+        display: block;
+    }
+}
+
+#banner {
+    @media screen and (max-width: $NOTlg) {
+        margin: 0 9px;
+        padding: 40px 32px;
+        border-radius: 24px;
+        background-color: getColor(primary-base);
+        display: block;
+    }
+    @media screen and (min-width:$NOTxs) and (max-width: $NOTlg) {
+        width: 83.33%;
+        margin: auto;
+    }
+    p {
+        @media screen and (max-width: $xs) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.feature-icon {
+    display: block;
+    margin: auto;
+    padding-bottom: 32px;
+    @media screen and (max-width: $sm) {
+        margin-right: 24px;
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        padding: 0;
+    }
+}

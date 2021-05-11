@@ -1,0 +1,144 @@
+// main: main.scss
+footer {
+    .container {
+        @media screen and (max-width: $xs) {
+            padding: 0 24px;
+        }
+    }
+
+    a {
+        color: $on-primary-medium;
+
+        &:hover {
+            color: $on-primary-white;
+        }
+    }
+
+    p {
+        color: $on-primary-medium;
+    }
+
+    padding-bottom: 24px;
+    padding-top: 56px;
+    background-color: getColor(primary-base);
+    color: $on-primary-medium;
+
+    @media screen and (min-width:$lg) {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+#langrow {
+    a {
+        &.lng-a {
+            color: $on-primary-white;
+        }
+
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: $NOTlg) {
+        padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-right: 40px;
+        margin-left: auto;
+    }
+}
+
+#foott {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 24px;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-bottom: 0px;
+    }
+}
+
+#social {
+    @media screen and (max-width: $NOTlg) {
+        padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    svg {
+        color: $on-primary-white;
+
+        &:hover {
+            color: $on-primary-medium;
+        }
+    }
+
+    a {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $on-primary-white;
+        }
+    }
+}
+
+#logo-f {
+    float: left;
+}
+
+// trysection start
+#trysection {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 56px;
+    border-bottom: 2px solid $on-primary-low;
+    background-color: getColor(primary-base);
+
+    @media screen and (min-width: $NOTxs) {
+        padding-top: 56px;
+    }
+
+    @media screen and (min-width: $lg) {
+        padding-bottom: 64px;
+    }
+
+    h4 {
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            margin-bottom: 16px;
+        }
+    }
+
+    p {
+        padding-bottom: 24px;
+        margin-bottom: 0;
+
+        @media screen and (min-width: $NOTxs) and (max-width: $sm) {
+            padding-bottom: 32px;
+        }
+
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTxl) {
+            padding-top: 8px;
+        }
+
+        @media screen and (min-width: $xl) {
+            padding-top: 0;
+        }
+    }
+}
+
+// trysection end

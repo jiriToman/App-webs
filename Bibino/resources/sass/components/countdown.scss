@@ -1,0 +1,43 @@
+#countdown {
+    width: 100%;
+    padding-top: 24px;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: getColor(low-emphasis);
+    clear: both;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+#snum {
+    text-align: center;
+}
+
+#mnum {
+    text-align: center;
+}
+
+#countdown p {
+    color: getColor(warning-lighter);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    // width: 25%;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+// #countdown span {}

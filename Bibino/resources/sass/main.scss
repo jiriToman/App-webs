@@ -1,0 +1,37 @@
+// out: ../css/main.min.css, compress: true, sourceMap: false
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+//Swiper library
+@import "../swiper/swiper.min.css";
+//commmon styles
+@import "colors.scss";
+@import "screensizes.scss";
+@import "typography.scss";
+@import "buttons.scss";
+@import "general.scss";
+@import "form.scss";
+@import "cookies.scss";
+@import "bot.scss";
+// shared sections nav & footer
+@import "./shared/nav.scss";
+@import "./shared/footer.scss";
+//header
+@import "./header/content.scss";
+@import "./header/phone.scss";
+@import "./header/sidepages.scss";
+@import "./header/modal.scss";
+// other sections
+@import "./sections/reasons.scss";
+@import "./sections/features.scss";
+@import "./sections/newsletter.scss";
+@import "./sections/testimony.scss";
+@import "./sections/blog.scss";
+// single page specific
+@import "./singlepage/confirmation.scss";
+@import "./singlepage/comparison.scss";
+@import "./singlepage/download.scss";
+@import "./singlepage/pricing.scss";
+// @import "./singlepage/account.scss";
+// components
+@import "./components/countdown.scss";
+@import "../../../commons/sass/components/spinner.scss";
+@import "../../../commons/sass/components/loader.scss";

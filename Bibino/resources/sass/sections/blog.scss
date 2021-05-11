@@ -1,0 +1,65 @@
+.two-lines-h4 {
+    @include heightInLines(2, $h4-font-sizes, $h4-line-heights);
+    overflow: hidden;
+    display: block;
+}
+
+.four-lines-p {
+    @include heightInLines(4, $p-font-sizes, $p-line-heights);
+    overflow: hidden;
+    display: block;
+}
+
+#blog {
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.card {
+            &:hover {
+                box-shadow: 0 3px 14px 2px $medium-border, 0 8px 10px 1px $light-background;
+                // border: 2px solid getColor(high-border);
+                background-color: getColor(surface-elevated);
+                ;
+            }
+        }
+    }
+
+    .headings {
+        padding-bottom: 56px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        color: getColor(medium-emphasis);
+        border-radius: 16px;
+        background-color: inherit;
+        color: inherit;
+        padding-left: 0;
+        padding-right: 0;
+
+        img {
+            // height: 182px;
+            max-height: 182px;
+            border-radius: 16px 16px 0 0;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 24px;
+            padding-bottom: 40px;
+        }
+
+        .two-lines-h4 {
+            margin-bottom: 24px;
+        }
+
+        border: solid 1px getColor(medium-border);
+        background-color: getColor(light-high-emphasis);
+
+        .four-lines-p {
+            color: getColor(medium-emphasis);
+        }
+    }
+}

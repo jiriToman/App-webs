@@ -1,0 +1,52 @@
+// main: main.scss
+#reasons {
+    background-color: getColor(light-background);
+    @extend %section;
+    @media screen and (min-width: $lg) {}
+}
+
+.reason {
+    text-align: center;
+    @media screen and (max-width: $sm) {
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: $NOTsm) and (max-width:$NOTlg) {
+        padding-bottom: 96px;
+    }
+    @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+        padding-bottom: 120px;
+    }
+    @media screen and (min-width: $xl) {
+        padding-bottom: 112px;
+    }
+    img {
+        width: 264px;
+        @media screen and (max-width: $sm) {
+            padding-bottom: 16px;
+            margin: auto;
+            display: block;
+        }
+        @media screen and (min-width: $NOTsm) and (max-width:$NOTlg) {
+            margin-bottom: 24px;
+        }
+        @media screen and (min-width: $lg) and (max-width:$NOTxl) {
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width: $xl) {
+            margin-bottom: 32px;
+        }
+    }
+    p {
+        @media screen and (min-width: $lg) {
+            margin-bottom: 0;
+        }
+    }
+    &.last-sm {
+        padding-bottom: 0px;
+    }
+    &.last {
+        @media screen and (min-width: $NOTsm) {
+            padding-bottom: 0px;
+        }
+    }
+}

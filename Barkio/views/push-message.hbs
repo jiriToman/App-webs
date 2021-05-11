@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+
+<head>
+   {{> head/cmstatic}}
+</head>
+<!-- Google Analytics -->
+<script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<body>
+    <div style="display: flex; justify-content: center" id="root"></div>
+    <script>
+        const isTestEnviromnemt = {{{ environment }}}
+
+        function loadCorrectFiles() {
+            if (isTestEnviromnemt) {
+                const testSrc = document.createElement('script');
+                testSrc.src = "/push-message/dist/index.js";
+                return document.head.appendChild(testSrc);
+            }
+            if (!isTestEnviromnemt) {
+                const prodSrc = document.createElement('script');
+                prodSrc.src = "/push-message/barkioWebViewBuild/index.js";
+                return document.head.appendChild(prodSrc);
+            }
+        }
+        loadCorrectFiles();
+    </script>
+
+</body>
+
+</html>

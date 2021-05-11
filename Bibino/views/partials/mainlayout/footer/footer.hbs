@@ -1,0 +1,100 @@
+<footer class="">
+    <div class="container">
+        <div id="underline">
+            <div id="footrow" class="row">
+                <div id="footlogo" class="col-12 col-lg-7 d-none d-lg-inline-block">
+                    <a id="logo-f" class="navbar-brand" href="/{{t "home.lang" }}">
+                        <img alt="Barkio" src="/images/Bibino-logotype-white.svg" class="logo" id="menuimg-f">
+                    </a>
+                </div>
+                {{#if route}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a id="en" href="/en/{{changelng route }}">EN</a>
+                    <a id="de" href="/de/{{changelng route }}">DE</a>
+                    <a id="fr" href="/fr/{{changelng route }}">FR</a>
+                    <a id="cs" href="/cs/{{changelng route }}">CS</a>
+                    <a id="nl" href="/nl/{{changelng route }}">NL</a>
+                </div>
+                {{else}}
+                {{#if blogUrl}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a class="disabled" id="en">EN</a>
+                    {{!-- href="/en/{{changelng blog }}" --}}
+
+                </div>
+                {{else}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a id="en" href="/en">EN</a>
+                    <a id="de" href="/de">DE</a>
+                    <a id="fr" href="/fr">FR</a>
+                    <a id="cs" href="/cs">CS</a>
+                    <a id="nl" href="/nl">NL</a>
+                </div>
+                {{/if}}{{/if}}
+
+                <div id="social" class="col-12 col-lg-auto">
+                    <div class="back-sm">
+                        <a id="fblogo" href="{{t "fblink" }}">
+                            <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="nonzero"
+                                    d="M15.793 22v-7.739h2.628l.39-3.028h-3V9.306c0-.876.245-1.47 1.5-1.47h1.587v-2.7a22.242 22.242 0 0 0-2.325-.116c-2.304 0-3.883 1.408-3.883 3.99v2.228h-2.603v3.028h2.603V22H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5h-1.207z" />
+                            </svg>
+                        </a>
+                        <a id="instalogo" href="https://www.instagram.com/bibinoapp/">
+                            <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="nonzero"
+                                    d="M2 7v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5zm16.667-2.778a1.112 1.112 0 1 1-.001 2.223 1.112 1.112 0 0 1 0-2.223zM12 6.444a5.556 5.556 0 1 1-.001 11.113A5.556 5.556 0 0 1 12 6.444zm0 2.223a3.333 3.333 0 1 0 0 6.666 3.333 3.333 0 0 0 0-6.666z" />
+                            </svg>
+                        </a>
+                        <a id="mediumlogo" href="/blog">
+                            <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M4.04138514,0 C5.23784661,0 6.20777027,0.985319276 6.20777027,2.2007722 L6.20711298,4.06149064 C7.42220224,3.37798977 8.82223164,2.98850575 10.3125,2.98850575 C14.9724026,2.98850575 18.75,6.79665845 18.75,11.4942529 C18.75,16.1918473 14.9724026,20 10.3125,20 C5.65259742,20 1.875,16.1918473 1.875,11.4942529 C1.875,11.4071541 1.87629864,11.3203611 1.87887746,11.2338925 C1.8757588,11.2003738 1.875,11.1665575 1.875,11.1325611 L1.875,2.2007722 C1.875,0.985319276 2.84492366,0 4.04138514,0 Z M14.5389627,12.0452374 C13.9589296,11.7980921 13.2899765,12.0717542 13.0448142,12.6564789 C12.5845063,13.7543369 11.5152339,14.4827586 10.3125,14.4827586 C9.10973053,14.4827586 8.04043242,13.7542935 7.58014739,12.6563873 C7.33500454,12.0716543 6.6660606,11.7979695 6.08601928,12.0450952 C5.50597795,12.2922209 5.2344891,12.9665756 5.47963195,13.5513086 C6.29361858,15.4928903 8.18530106,16.7816092 10.3125,16.7816092 C12.4396358,16.7816092 14.3312731,15.4929667 15.1452998,13.5514714 C15.3904621,12.9667467 15.1189958,12.2923827 14.5389627,12.0452374 Z"
+                                    transform="translate(2 2)" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="foot-end" class="row">
+                <div id="foott" class="col-12 col-lg-7 order-lg-2">
+                    <p>
+                        <a id="privacy" href="{{t "footer.doclinks.privacylink" }}">{{t "footer.doclinks.privacy" }}</a>
+                        · <a id="tos" href="{{t "footer.doclinks.toslink" }}">{{t "footer.doclinks.tos" }}</a>
+                        · <a id="presskit"
+                            href="{{t "footer.doclinks.preskitlink" }}">{{t "footer.doclinks.preskit" }}</a>
+                        {{!-- · <a id="gift-card" href="/{{t "home.lang" }}/gift-card/redeem-gift">{{t "footer.gift" }}</a> --}}
+                    </p>
+                    <p>
+                        <a id="presskit" href="{{t "footer.doclinks.uptimelink" }}" target="_blank"
+                            rel="noopener">{{t "footer.doclinks.uptime" }}</a> ·
+                        <a id="copy-td" href="#modalcopy" data-toggle="modal">{{t "footer.doclinks.copytd" }}</a>
+                    </p>
+                    {{> home/modalcopy}}
+                </div>
+
+                <div id="copyright" class="col col-lg-5 order-lg-1">
+                    <p id="copy" class="mb-0">
+                        <a id="copyusfooter"
+                            href="https://tappytaps.com/?utm_source=bibino&utm_medium=web_footer&utm_campaign=bibino_web_">{{t "footer.copyus" }}</a>
+                    </p>
+                    <p class="text-lg-left">
+                        <a id="emailfooter"
+                            href="mailto:support@tappytaps.com?subject=Bibino">{{t "footer.contactus" }}</a>
+                        {{!-- · <a id="compare-link" href="/comparison" rel="nofollow">{{t "footer.barkiordm" }}</a> --}}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-12 col-md-6"></div>
+    </div>
+    {{!-- <div id="form-messages" class="hidden">
+        <p id="form-success-msg">{{t "modalplatforms.form-msg.success1" }}<span id="heart">❤️</span>{{t "modalplatforms.form-msg.success2" }}</p>
+        <p id="form-error-msg">{{t "modalplatforms.form-msg.error" }}</p>
+        <p id="form-email-msg">{{t "modalplatforms.form-msg.email" }}</p>
+    </div> --}}
+</footer>

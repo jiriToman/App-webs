@@ -1,0 +1,40 @@
+ <script>
+        $(document).ready(function() {
+            let formSent = false;
+            $('form').on('submit', function(e) {
+                var formid = event.target.id;
+                e.preventDefault();
+                let target = $(this).attr("action");
+                let email = $(this).find('input[type=email]').val();
+                let list = $(this).find('input[name=list]').val();
+                let Formdata = "email=" + email + "&list=" + list; //POKUD JINY FORM zmenit list !!!
+                let botCheck = Boolean($(this).find('input[name=hp]').val());
+                let mailCheck = /\S+@\S+\.\S+/.test($(this).find('input[type=email]').val());
+                if (botCheck == false) {
+                    if (mailCheck == true) {
+                        $.ajax({
+                            url: target,
+                            // url: "https://sendy.tappytaps.com/subscribe", 
+                            type: "POST",
+                            data: Formdata,
+                            cache: false,
+                            success: function(html) {
+                                formSent = true;
+                                $('#form-success-msg').removeClass('hidden');
+                                $('form').addClass('hidden');
+
+                            },
+                            error: function(jqXHR, status, statusText) {
+                                let errormsg = $("#form-error-msg").html();
+                                $('#form-error-msg').removeClass('hidden');
+                                //$('#form-error-msg').css("color", "#ff4f41")
+                                $('form').addClass('hidden');
+                            }
+                        });
+                    } else if (mailCheck == false) {
+                          $('#form-email-msg').removeClass('hidden');
+                    }
+                }
+            });
+        });
+    </script>

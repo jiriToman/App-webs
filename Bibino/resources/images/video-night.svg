@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="123" viewBox="0 0 200 123">
+    <g fill="none" fill-rule="evenodd" stroke="#2AA499">
+        <text fill="#2AA499" font-family="Noteworthy-Bold, Noteworthy" font-size="24" font-weight="bold" transform="translate(2 1) rotate(32 120.636 60.544)">
+            <tspan x="46.636" y="66.544">Video &amp; smart</tspan> <tspan x="89.251" y="91.544"> vision</tspan>
+        </text>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M100.01 89.07c-5.761 21.504-44.696 26.347-61.886 24.775-6.904-.631-13.746-1.939-20.587-3.037-2.064-.332-4.131-.631-6.165-1.126-1.043-.254-2.077-.557-3.114-.835" transform="translate(2 1)"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M10.49 102.63C6.33 104.1.784 104.402.086 106.893c-.99 3.537 6.844 8.105 8.121 9.149" transform="translate(2 1)"/>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+// out: ../css/main.min.css, compress: true, sourceMap: false
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+//Swiper library
+@import "../swiper/swiper.min.css";
+//Custom styles
+@import "colors.scss";
+@import "screensizes.scss";
+@import "typography.scss";
+@import "buttons.scss";
+@import "general.scss";
+@import "nav.scss";
+@import "header.scss";
+@import "reasons.scss";
+@import "features.scss";
+@import "testimony.scss";
+@import "footer.scss";
+@import "modal.scss";
+@import "ebooks.scss";
+@import "form.scss";
+@import "comparison.scss";
+@import "download.scss";
+@import "cookies.scss";
+@import "bot.scss";
+@import "newsletter.scss";
+//commons
+@import "../../../commons/sass/singlepage/pricing.scss";
+@import "../../../commons/sass/components/countdown.scss";
+@import "../../../commons/sass/components/spinner.scss";

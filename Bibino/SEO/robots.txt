@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /confirmation
+Disallow: /confirmation.html
+Disallow: /appnewsletter
+Disallow: /error
+Noindex: /comparison
+
+Sitemap: https://barkio.com/sitemap.xml

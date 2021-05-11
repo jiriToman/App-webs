@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="free_trial_days">
+        <item quantity="one">%d Tag gratis</item>
+        <item quantity="other">%d Tage gratis</item>
+    </plurals>
+    <plurals name="free_trial_weeks">
+        <item quantity="one">%d Woche gratis</item>
+        <item quantity="other">%d Wochen gratis</item>
+    </plurals>
+    <plurals name="free_trial_months">
+        <item quantity="one">%d Monat gratis</item>
+        <item quantity="other">%d Monate gratis</item>
+    </plurals>
+</resources>

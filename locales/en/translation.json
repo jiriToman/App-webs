@@ -1,0 +1,256 @@
+{
+    "home": {
+        "lang": "en",
+        "title": "Barkio: Dog Monitor for iOS, Android, macOS, and Windows",
+        "description": "Barkio turns your two devices into a single dog monitoring app. Watch live video of your dog, hear every bark, and interact remotely.",
+        "og": "https://barkio.com/images/image_og_en.jpg",
+        "ogdescription": "Barkio is a new generation of the dog monitoring app. Watch, hear, and communicate with your dog remotely. Try it for free on Android, iOS, macOS, and Windows.",
+        "ogtitle": "Barkio is a new generation of the dog monitoring app. Watch, hear, and communicate with your dog remotely. Try it for free on Android, iOS, macOS, and Windows.",
+        "ogurl": "https://barkio.com/en",
+        "locale": "en_US",
+        "alternate1": "de_DE",
+        "alternate2": "cs_CZ",
+        "canonical": "https://barkio.com/"
+    },
+    "menu": {
+        "separation": "Separation anxiety",
+        "salink": "https://www.dogmonitorapp.com/separation-anxiety/?utm_source=menu&utm_medium=web&utm_campaign=barkio",
+        "blog": "Blog",
+        "support": "Help",
+        "sale": "Download now",
+        "fb": "Join community"
+    },
+    "header": {
+        "h1": "Your dog will never feel lonely at home on its own",
+        "h2": "Meet a new generation of pet monitoring apps for your dogs and puppies. Try it for free.",
+        "modalplatforms": "Available platforms",
+        "platforms": "Check available platforms",
+        "overlaycss": "overlay",
+        "download": "Download now",
+        "deskdownlink": "/download/en"
+    },
+    "platforms": {
+        "available": "Available on ",
+        "a": ", and ",
+        "ios": "iOS",
+        "appStore": "App Store",
+        "ioslink": "https://apps.apple.com/app/apple-store/id1362484782?pt=271572&ct=Barkio%20Website&mt=8",
+        "and": "Android",
+        "GooglePlay": "Google Play",
+        "andlink": "https://play.google.com/store/apps/details?id=com.tappytaps.android.barkio&referrer=utm_source%3Dbarkioweb%26utm_campaign%3Dbutton",
+        "mac": "macOS",
+        "maclink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-1.2.7.dmg",
+        "lnx": "Linux",
+        "lnxlink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-1.2.7.AppImage",
+        "win": "Windows",
+        "winlink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-Setup-1.2.7.exe",
+        "now": "Try now"
+    },
+    "modalplatforms": {
+        "h4": "Other platforms",
+        "h4lg": "Choose your platform",
+        "txt": "Open this website on a particular device to download the app on that platform.",
+        "txtlg": "Barkio is a available for many operation systems like Android, iOS, macOS, Windows and Linux. Choose yours and never lose contact with your dog.",
+
+        "1mobh5": "Mobile",
+        "2mobh5": "Desktop"
+    },
+    "reasons": {
+        "h2": "Reasons to choose Barkio",
+        "h3": "Find out why Barkio is the best dog and pet monitoring app.",
+        "separation": {
+            "h4": "Deal with dog separation anxiety",
+            "txt1": "If your dog is barking, howling, or whining when it's home alone, it may indicate ",
+            "txta": "signs of separation anxiety in dogs",
+            "link": "https://www.dogmonitorapp.com/separation-anxiety/?utm_source=reasons_to_choose&utm_medium=web&utm_campaign=barkio",
+            "txt2": ". Barkio pet monitor lets you watch a video of your puppy in real-time and communicate remotely."
+        },
+        "watch": {
+            "h4": "Watch your puppy grow",
+            "txt": "Check on your puppy with Barkio pet cam. Monitoring your pup gives you a peace of mind knowing your pet is okay. Barkio is also handy when helping your dog settle in a new home."
+        },
+        "track": {
+            "h4": "Understand dog's behavior",
+            "txt": "Is your dog barking, howling, running around, or sleeping in its bed? Barkio gives you an overview of all activities, so you can better understand your dog's behavior."
+        },
+        "nohw": {
+            "h4": "No hardware cameras or collars",
+            "txt": "With Barkio app, you can turn your old phones, tablets, or laptops into a pet camera. No need for overpriced cameras, dog treat dispensers, or collars."
+        }
+    },
+    "features": {
+        "h2": "Top Barkio Features",
+        "h3": "Check your pet from anywhere and at any time.",
+        "hd": {
+            "h4": "Watch video of your dog",
+            "txt": "Watch your pet remotely with live HD video. With a 2-way video option, you will see your dog, and your pet will see you as well."
+        },
+        "talk": {
+            "h4": "Hear & talk to your dog",
+            "txt": "Hear if your dog barks or whines, calm your pet remotely, and record your own dog commands (voice messages)."
+        },
+        "check": {
+            "h4": "Check pet's activity log",
+            "txt": "Barkio gives you an overview of all activities your pup has been up to. Replay captured noises to find out if your dog is anxious or if everything's alright."
+        },
+        "invite": {
+            "h4": "Invite family members to join",
+            "txt": "All pet parents in your family can join the monitoring and check on your dog or puppy."
+        },
+        "reach": {
+            "h4": "Get unlimited reach",
+            "txt": "With WiFi and cellular data, you can check on your dog or puppy from anywhere. The distance between you and your pet is unlimited."
+        },
+        "choose": {
+            "h4": "Choose security and reliability",
+            "txt": "Security and reliability are our highest priorities. The whole communication is encrypted by industry-standard SSL. We'll notify you about your dog when anything happens."
+        },
+        "banner": {
+            "h4": "And many more!",
+            "txt": "Staying in touch with your dog has never been easier!"
+        }
+    },
+    "newsletter": {
+        "h2": "Sign up to Barkio paws-letter",
+        "txt": "Receive pet parent tips, special offers, and photos of cute puppies right into your inbox.",
+        "email": "Your email address",
+        "submit": "Sign up",
+        "success": "Thanks! ❤️ Check your inbox and confirm your email address.",
+        "wmail": "Enter a correct email address.",
+        "error": "Sorry, an unknown error has occurred. Please refresh the page and try again later."
+    },
+    "testimonials": {
+        "first": {
+            "h2": "Perfect for puppies",
+            "txt": "“Love it! My partner and I connect to check on our puppy when we go out to see what she's up to. Works flawlessly, plus costs a fraction compared to dog cameras. Recommend!“",
+            "signature": "Jackie B."
+        },
+        "second": {
+            "h2": "Helped my fostered dog",
+            "txt": "“Barkio helped me with training my fostered dog to feel comfortable and calm when I leave for an hour or two and gives me peace of mind. Barkio is a must for any dog owner.“",
+            "signature": "Peter W."
+        },
+        "third": {
+            "h2": "Proof for my neighbor",
+            "txt": "“My neighbor complained about my dog Trixie howling and barking whenever I left. Barkio helped me to watch video of Trixie when I'm not there. Turned out, she wasn't barking at all!“",
+            "signature": "Marijke S."
+        }
+    },
+    "footer": {
+        "trybanner": {
+            "h4": "Try Barkio now!",
+            "txt": "Never leave your dog alone again. Get started for free."
+        },
+        "doclinks": {
+            "privacy": "Privacy Policy",
+            "privacylink": "https://www.iubenda.com/privacy-policy/56309352/full-legal",
+            "tos": "Terms of Service",
+            "toslink": "/terms",
+            "preskit": "PressKit",
+            "preskitlink": "https://www.dropbox.com/sh/cvddgfmsl6tbctw/AAA0tDN1doB4vwiGF9-q0EnTa?dl=0",
+            "copytd": "Copyright & trademark notices"
+        },
+        "copyus": "© Copyright 2020 TappyTaps s.r.o.",
+        "contactus": "Contact us at support@barkio.com",
+        "barkiordm": "Barkio or Dog Monitor?"
+    },
+    "comparison-page": {
+        "h1": "Barkio or Dog Monitor?",
+        "h2": "Find out what dog monitoring app is best for you.",
+        "1mobile": {
+            "h": "Mobile platforms",
+            "dm": "iOS, Android",
+            "barkio": "iOS, Android"
+        },
+        "2desktop": {
+            "h": "Desktop platforms",
+            "dm": "macOS only",
+            "barkio": "macOS, Windows, Linux"
+        },
+        "3pricing": {
+            "h": "Pricing",
+            "dm": "Pay for each platform",
+            "barkio": "All platforms included"
+        },
+        "4download": {
+            "h": "Download options",
+            "dm": "Pay upfront with no free trial",
+            "barkio": "Try for free"
+        },
+        "5video": {
+            "h": "Live video feed"
+        },
+        "6audio": {
+            "h": "Live audio feed"
+        },
+        "7personstations": {
+            "h": "Multiple Person Stations"
+        },
+        "8dogstations": {
+            "h": "Multiple Dog Stations",
+            "barkio": "Coming soon"
+        },
+        "9alog": {
+            "h": "Synchronized Activity log"
+        },
+        "10graphs": {
+            "h": "Detailed graphs",
+            "barkio": "Coming soon"
+        },
+        "11commands": {
+            "h": "Commands"
+        },
+        "12syncommands": {
+            "h": "Synchronized commands"
+        },
+        "13twoway": {
+            "h": "Two-way video"
+        },
+        "14powersave": {
+            "h": "Power saving mode"
+        },
+        "15background": {
+            "h": "Background Monitoring"
+        },
+        "16talk": {
+            "h": "Talk-to-dog feature"
+        },
+        "17profile": {
+            "h": "Dog profiles"
+        },
+        "18notify": {
+            "h": "Notifications with audio"
+        },
+        "dm-button": "Buy Dog Monitor",
+        "bark-button": "Try Barkio for free"
+    },
+    "down-pages": {
+        "download": {
+            "h1": "Choose your platform",
+            "h2": "Barkio is available on multiple platforms. Choose yours and download Barkio for free.",
+            "1h4": "Download for desktop",
+            "1txt": "Available for macOS, Windows, and Linux.",
+            "2h4": "Download on mobile",
+            "2txt": "Available on iOS and Android devices."
+        },
+        "ioslg": "App Store",
+        "andlg": "Google Play",
+        "maclg": "Download for MacOS",
+        "lnxlg": "Download for Linux",
+        "winlg": "Download for Windows",
+        "downloadthx": {
+            "h1": "Thanks for downloading",
+            "h2": "Stay in touch and join our Barkio online community. You won't miss out on any pawesome news!",
+            "banner": "Join Barkio community",
+            "repeattxt": "Download didn't start?",
+            "link": " Try it again",
+            "showall": " download for "
+        }
+    },
+    "cookies": {
+        "sentence": "By using this site, you agree to our use of ",
+        "btn": "Got it",
+        "link": "cookies",
+        "url": "https://www.cookiesandyou.com/"
+    }
+}

@@ -1,0 +1,31 @@
+    "platforms": {
+
+        // "ios": { "desktop": "App Store", "default": "App defa", "mobile": "Get the app" },
+        "ios": "App Store",
+        "and": "Google Play",
+        // "and_desktop": "Google Play",
+        // "and_mobile": "Get the app",
+        "mac": "Mac App Store",
+        "lnx": "Linux",
+        "win": "Windows",
+        "now": "Try now!"
+
+    },
+
+
+       "platforms": {
+
+        // "ios": {
+        //     "desktop": "App Store",
+        //     "default": "App defa",
+        //     "mobile": "Získejte aplikaci"
+        // },
+        "ios": "App Store",
+        "and": "Google Play",
+        // "and_desktop": "Google Play",
+        // "and_mobile": "Získejte aplikaci",
+        "mac": "Mac App Store",
+        "lnx": "Linux",
+        "win": "Windows",
+        "now": "Vyzkoušet nyní"
+    },

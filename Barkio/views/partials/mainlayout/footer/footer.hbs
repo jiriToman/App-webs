@@ -1,0 +1,89 @@
+<footer class="">
+    <div class="container">
+        <div id="underline">
+            <div id="footrow" class="row">
+                <div id="footlogo" class="col-12 col-lg-7 visiblelgxl">
+                    <a id="logo-f" class="navbar-brand" href="/{{t "home.lang" }}">
+                        <img alt="Barkio" src="/images/barkio-logotyp-white.svg" class="logo" id="menuimg-f">
+                    </a>
+                </div>
+                                {{#if route}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a id="en" href="/en/{{changelng route }}">EN</a>
+                    <a id="de" href="/de/{{changelng route }}">DE</a>
+                    <a id="cs" href="/cs/{{changelng route }}">CS</a>
+                </div>
+                {{else}}
+                {{#if blogUrl}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a class="disabled" id="en">EN</a>
+                    {{!-- href="/en/{{changelng blog }}" --}}
+
+                </div>
+                {{else}}
+                <div id="langrow" class="col-12 col-lg-auto">
+                    <a id="en" href="/en">EN</a>
+                    <a id="de" href="/de">DE</a>
+                    <a id="cs" href="/cs">CS</a>
+                </div>
+                {{/if}}{{/if}}
+
+                <div id="social" class="col-12 col-lg-auto">
+                    <div class="back-sm">
+                        <a id="fblogo" href="https://facebook.com/groups/barkio">
+                            <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="nonzero"
+                                    d="M15.793 22v-7.739h2.628l.39-3.028h-3V9.306c0-.876.245-1.47 1.5-1.47h1.587v-2.7a22.242 22.242 0 0 0-2.325-.116c-2.304 0-3.883 1.408-3.883 3.99v2.228h-2.603v3.028h2.603V22H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5h-1.207z" />
+                            </svg>
+                        </a>
+                        <a id="instalogo" href="https://www.instagram.com/barkioapp/">
+                            <svg class="footsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="nonzero"
+                                    d="M2 7v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5zm16.667-2.778a1.112 1.112 0 1 1-.001 2.223 1.112 1.112 0 0 1 0-2.223zM12 6.444a5.556 5.556 0 1 1-.001 11.113A5.556 5.556 0 0 1 12 6.444zm0 2.223a3.333 3.333 0 1 0 0 6.666 3.333 3.333 0 0 0 0-6.666z" />
+                            </svg>
+                        </a>
+                        <a id="mediumlogo" href="/blog">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path fill="currentColor" d="M18,2 C20.209139,2 22,3.790861 22,6 L22,6 L22,18 C22,20.209139 20.209139,22 18,22 L18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,18 L2,6 C2,3.790861 3.790861,2 6,2 L6,2 Z M12.0000002,12.3529412 C10.4953683,12.3529412 8.56179104,14.5212648 8.34653956,16.0256341 C8.13128807,17.5300035 9.07625956,18.2887545 10.2382114,17.8985343 C11.4003664,17.5082925 12.2818821,17.5093259 13.7689449,17.888416 C15.2560077,18.2675062 15.9999633,17.1744834 15.5573386,15.8205421 C15.1147139,14.4666009 13.5046321,12.3529412 12.0000002,12.3529412 Z M17.7432119,10.547105 C17.038499,10.547105 16.3792157,11.2090266 16.1396946,12.1576811 C15.8654549,13.2433301 16.2593628,14.2521422 17.036283,14.4549166 C17.1258495,14.4775929 17.2174474,14.4893995 17.3090453,14.4893995 C18.0137582,14.4893995 18.6730415,13.8274779 18.9125626,12.879573 C19.187541,11.7931744 18.7936331,10.7843623 18.0159743,10.5815879 C17.9265924,10.5589116 17.8348099,10.547105 17.7432119,10.547105 Z M6.2564805,10.547105 C6.16487077,10.547105 6.07326105,10.5589116 5.98386768,10.5815879 C5.20684727,10.7843623 4.81288851,11.7931744 5.0869789,12.879573 C5.32653095,13.8274779 5.98589935,14.4899618 6.69088792,14.4893995 C6.78249765,14.4893995 6.87410737,14.4775929 6.96350074,14.4549166 C7.74052115,14.2521422 8.13447992,13.2433301 7.86038952,12.1576811 C7.62083747,11.2090266 6.96146907,10.547105 6.2564805,10.547105 Z M14.6137571,6 C13.6440463,6 12.7416247,7.03879725 12.5584488,8.3652643 C12.359759,9.80604966 13.0431172,11.0957849 14.0814255,11.2393387 C14.1442287,11.2481469 14.2070319,11.2524572 14.269835,11.2524572 C15.2393589,11.2524572 16.1417805,10.21366 16.3251433,8.88794255 C16.4228995,8.17860689 16.310564,7.48538823 16.0088846,6.93553596 C15.7199152,6.40854736 15.291321,6.08133466 14.8019797,6.01311849 C14.7391765,6.00431036 14.6765603,6 14.6137571,6 Z M9.38595439,6 C9.32315122,6 9.26034806,6.00431036 9.1975449,6.01311849 C8.70839048,6.08058503 8.27979627,6.40854736 7.99064003,6.93553596 C7.68914746,7.48538823 7.57662512,8.17860689 7.67456815,8.88719292 C7.86951964,10.299305 8.87623942,11.3836422 9.91828598,11.2393387 C10.9564073,11.0957849 11.6397656,9.80604966 11.4412627,8.3652643 C11.2580868,7.03879725 10.3554782,6 9.38595439,6 Z"/>
+</svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="foot-end" class="row">
+                <div id="foott" class="col-12 col-lg-7 order-lg-2">
+                    <p>
+                        <a id="privacy" href="{{t "footer.doclinks.privacylink" }}">{{t "footer.doclinks.privacy" }}</a>
+                        · <a id="tos" href="{{t "footer.doclinks.toslink" }}">{{t "footer.doclinks.tos" }}</a>
+                        · <a id="presskit"
+                            href="{{t "footer.doclinks.preskitlink" }}">{{t "footer.doclinks.preskit" }}</a>
+                    </p>
+                    <p>
+                        <a id="copy-td" href="#modalcopy" data-toggle="modal">{{t "footer.doclinks.copytd" }}</a>
+                    </p>
+                    {{> home/modalcopy}}
+                </div>
+
+                <div id="copyright" class="col col-lg-5 order-lg-1">
+                    <p id="copy" class="mb-0">
+                        <a id="copyusfooter"
+                            href="https://tappytaps.com/?utm_source=barkio&utm_medium=web_footer&utm_campaign=barkio_web_">{{t "footer.copyus" }}</a>
+                    </p>
+                    <p class="text-lg-left">
+                        <a id="emailfooter" href="mailto:support@barkio.com">{{t "footer.contactus" }}</a>
+                        {{!-- · <a id="compare-link" href="/comparison" rel="nofollow">{{t "footer.barkiordm" }}</a> --}}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-12 col-md-6"></div>
+    </div>
+    {{!-- <div id="form-messages" class="hidden">
+        <p id="form-success-msg">{{t "modalplatforms.form-msg.success1" }}<span id="heart">❤️</span>{{t "modalplatforms.form-msg.success2" }}</p>
+        <p id="form-error-msg">{{t "modalplatforms.form-msg.error" }}</p>
+        <p id="form-email-msg">{{t "modalplatforms.form-msg.email" }}</p>
+    </div> --}}
+</footer>

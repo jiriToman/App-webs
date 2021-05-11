@@ -1,0 +1,35 @@
+
+ 
+  {{#if blog.err}}
+
+             
+  {{else}}
+    <section id="blog" class="section">
+            <div class="container">
+                <div class="headings">
+                <h2>{{i18next "blogsection.h" @root.lang }}</h2>
+                </div>
+                <div class="row ">
+
+   
+                    {{#each blog}}
+                    <div class=" col-sm-12 col-md">
+                    <a class="card" href="blog/article/{{slug}}">
+                        
+                            <img src="{{imgUrl}}" class="card-img-top" alt="{{imgAlt}}">
+                            <span class="card-body">
+                                <span class="two-lines-h4"> <h4 >{{title}}</h4></span>
+                                <span class="four-lines-p">{{html}}</span>
+                               
+                            </span>
+                    
+                    </a></div>
+                    {{/each}}
+             </div>
+             <div class="row justify-content-center mt-16p pb-8p">
+                 <a href="/blog" class="btn btn-primary lg">{{i18next "blogsection.a" @root.lang }}</a>
+             </div>
+        </div>
+    </section>
+   
+    {{/if}}

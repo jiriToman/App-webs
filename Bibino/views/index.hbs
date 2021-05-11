@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+
+<head>
+
+ {{> home/head/head}}
+
+</head>
+
+<body>
+
+{{> trackscripts/gtmpixel}}
+ <div id="device"></div>
+
+
+
+  {{!-- menu definovano views/partials/mainlayout  --}}
+  {{> mainlayout/nav}}
+
+  {{!-- body definovanno views/ a hbs file podle stranky --}}
+
+
+
+{{> home/homepage}}
+
+
+
+{{> mainlayout/footer/footer}}
+
+  {{> endscripts/homepage}}
+ 
+</body>
+
+</html>

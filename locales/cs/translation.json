@@ -1,0 +1,255 @@
+{
+    "home": {
+        "lang": "cs",
+        "title": "Barkio: Psí Chůvička pro Váš mobil, tablet i počítač",
+        "description": "Proměňte dvě zařízení v chytrou psí chůvičku. Sledujte živý video přenos toho, co váš pejsek doma dělá a komunikujte s ním na dálku.",
+        "og": "https://barkio.com/images/image_og_cs.jpg",
+        "ogdescription": "Barkio is a new generation of the dog monitoring app. Watch, hear, and communicate with your dog remotely. Try it for free on Android, iOS, macOS, and Windows.",
+        "ogtitle": "Barkio is a new generation of the dog monitoring app. Watch, hear, and communicate with your dog remotely. Try it for free on Android, iOS, macOS, and Windows.",
+        "ogurl": "https://barkio.com/cs",
+        "locale": "cs_CZ",
+        "alternate1": "en_US",
+        "alternate2": "de_DE",
+        "canonical": "https://barkio.com/cs"
+    },
+    "menu": {
+        "separation": "Separační úzkost",
+        "salink": "https://www.dogmonitorapp.com/cs/separacni-uzkost/?utm_source=menu&utm_medium=web&utm_campaign=barkio",
+        "blog": "Blog",
+        "support": "Podpora",
+        "sale": "Stáhnout zdarma",
+        "fb": "Připojte se do komunity"
+    },
+    "header": {
+        "h1": "Zůstaňte ve spojení se svým pejskem",
+        "h2": "Barkio je novou generací aplikace na monitorování psů a štěňat. Vyzkoušejte ji zdarma.",
+        "modalplatforms": "Dostupné platformy",
+        "platforms": "Zobrazit dostupné platformy",
+        "overlaycss": "overlay",
+        "download": "Stáhnout",
+        "deskdownlink": "/download/cs"
+    },
+    "platforms": {
+        "available": "Dostupné na ",
+        "a": " a ",
+        "ios": "iOS",
+        "appStore": "App Store",
+        "ioslink": "https://apps.apple.com/app/apple-store/id1362484782?pt=271572&ct=Barkio%20Website&mt=8",
+        "and": "Android",
+        "GooglePlay": "Google Play",
+        "andlink": "https://play.google.com/store/apps/details?id=com.tappytaps.android.barkio&referrer=utm_source%3Dbarkioweb%26utm_campaign%3Dbutton",
+        "mac": "macOS",
+        "maclink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-1.2.7.dmg",
+        "lnx": "Linux",
+        "lnxlink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-1.2.7.AppImage",
+        "win": "Windows",
+        "winlink": "https://github.com/tappytaps/barkio-desktop/releases/download/v1.2.7/Barkio-Setup-1.2.7.exe",
+        "now": "Vyzkoušet nyní"
+    },
+    "modalplatforms": {
+        "h4": "Ostatní platformy",
+        "h4lg": "Vyberte svou platformu",
+        "txt": "Otevřete tento web na příslušném zařízení a stáhněte si aplikaci pro danou platformu.",
+        "txtlg": "Barkio je k dostupné pro více operačních systémů, jako jsou Android, iOS, macOS, Windows a Linux. Vyberte si svůj a nikdy neztratíte kontakt se svým psem.",
+        "1mobh5": "Mobil a tablet",
+        "2mobh5": "Počítač"
+    },
+    "reasons": {
+        "h2": "Proč si vybrat Barkio",
+        "h3": "Zjistěte, proč je Barkio nejlepší psí chůvičkou pro domácí mazlíčky.",
+        "separation": {
+            "h4": "Odhalte psí separační úzkost",
+            "txt1": "Pokud váš pes štěká, vyje nebo kňučí, když je doma sám, může se jednat o ",
+            "txta": "projevy separační úzkosti psa",
+            "link": "https://www.dogmonitorapp.com/cs/separacni-uzkost/?utm_source=barkio_web&utm_medium=barkio_web&utm_campaign=barkio_web",
+            "txt2": ". S Barkio uvidíte, jak si váš mazlíček vede, když je doma sám a můžete jej na dálku uklidnit."
+        },
+        "watch": {
+            "h4": "Sledujte rozvoj vašeho štěňátka",
+            "txt": "Zkontrolujte svého pejska kdykoli během dne, uklidněte jej na dálku a pomozte mu usadit se v novém domově."
+        },
+        "track": {
+            "h4": "Poznejte psí duši",
+            "txt": "Proč váš pes štěká nebo chodí sem a tam? Díky časovým audio záznamům budete mít o vašem mazlíčkovi přehled a lépe porozumíte jeho chování."
+        },
+        "nohw": {
+            "h4": "Využijte zařízení, která máte doma",
+            "txt": "Oživte svůj starý telefon, tablet nebo počítač a proměňte ho v psí chůvičku. Žádné drahé kamery ani psí obojky nejsou třeba."
+        }
+    },
+    "features": {
+        "h2": "Ty nejlepší Barkio funkce",
+        "h3": "Komunikujte se svým psem snadno a odkudkoli.",
+        "hd": {
+            "h4": "Sledujte video svého psa",
+            "txt": "Sledujte svého pejska vzdáleně pomocí HD videa. Díky obousměrnému videu vás uvidí i váš mazlíček."
+        },
+        "talk": {
+            "h4": "Komunikujte se svým psem",
+            "txt": "S Barkio psí chůvičkou uslyšíte, když vás pejsek či štěňátko potřebuje a můžete jej vzdáleně uklidnit svým hlasem nebo pomocí povelů."
+        },
+        "check": {
+            "h4": "Nahlédněte do aktivit pejska",
+            "txt": "Díky Barkio máte přehled o všech aktivitách vašeho mazlíčka. Přehrajte si zaznamenané zvuky a zjistěte, proč je pejsek hlučný."
+        },
+        "invite": {
+            "h4": "Monitorujte s celou rodinou",
+            "txt": "Všichni páníčci mohou mazlíčka sledovat najednou a podívat se, co pejsek dělá."
+        },
+        "reach": {
+            "h4": "Sledujte psa odkudkoli",
+            "txt": "S WiFi a mobilními daty je dosah mezi vámi a pejskem neomezený. Dohlédněte na něj odkudkoli."
+        },
+        "choose": {
+            "h4": "Zvolte bezpečnost a spolehlivost",
+            "txt": "Spolehlivost a bezpečí jsou pro nás na prvním místě. Celá komunikace je šifrována průmyslovým standardem SSL. Zašleme vám upozornění o vašem psovi, kdykoli se něco děje."
+        },
+        "banner": {
+            "h4": "A mnoho dalších funkcí!",
+            "txt": "Objevte je v Barkio aplikaci."
+        }
+    },
+    "newsletter": {
+        "h2": "Barkio packovinky na Váš email",
+        "txt": "Získejte užitečné tipy pro psí páníčky, informace o speciálních nabídkách a fotky roztomilých štěňátek na Váš email.",
+        "email": "Zadejte email",
+        "submit": "Přihlásit",
+        "success": "Děkujeme! ❤️ Zkontrolujte emailovou schránku a potvrďte svůj email.",
+        "wmail": "Zadnaný email má nesprávný formát.",
+        "error": "Omlouváme se došlo chybě. Prosíme obnovte stránku a vyzkoušejte později."
+    },
+    "testimonials": {
+        "first": {
+            "h2": "Vhodné pro štěňátka",
+            "txt": "“S partnerem se za den několikrát připojíme, abychom zkontrolovali naše půlroční štěně. Aplikace funguje bez problému, navíc nepotřebujete žádné předražené kamery. Doporučuji!“",
+            "signature": "Lucka S."
+        },
+        "second": {
+            "h2": "Pomoc pro psa z útulku",
+            "txt": "“Barkio mi pomohlo, aby se Aron cítil v bezpečí, když je doma hodinku až dvě sám. Díky aplikaci vím o všem, co se děje a můžu hned zareagovat, když mě Aron potřebuje.“",
+            "signature": "Martin V."
+        },
+        "third": {
+            "h2": "Skvělý pomocník",
+            "txt": "“Sousedé obviňovali naši Trixie, že ustavičně štěká, kdykoliv odejdeme z domu. Díky Barkio jsme zjistili, že Trixie vůbec neštěká, ale většinu dne spokojeně prospí v pelíšku.“",
+            "signature": "Jana R."
+        }
+    },
+    "footer": {
+        "trybanner": {
+            "h4": "Vyzkoušejte Barkio zdarma!",
+            "txt": "Váš domácí mazlíček se už nikdy nebude cítit opuštěný. Vyzkoušejte psí chůvičku zdarma."
+        },
+        "doclinks": {
+            "privacy": "Zásady ochrany osobních údajů",
+            "privacylink": "https://www.iubenda.com/privacy-policy/56309352/full-legal",
+            "tos": "Smluvní podmínky",
+            "toslink": "/terms",
+            "preskit": "PressKit",
+            "preskitlink": "https://www.dropbox.com/sh/cvddgfmsl6tbctw/AAA0tDN1doB4vwiGF9-q0EnTa?dl=0",
+            "copytd": "Autorská práva a ochranné známky"
+        },
+        "copyus": "© Copyright 2020 TappyTaps s.r.o.",
+        "contactus": "Kontaktujte nás na support@barkio.com",
+        "barkiordm": "Barkio nebo Dog Monitor?"
+    },
+    "comparison-page": {
+        "h1": "Barkio nebo Psí Chůvička?",
+        "h2": "Zjistěte, která aplikace je pro Vás nejlepší.",
+        "1mobile": {
+            "h": "Mobilní platformy",
+            "dm": "iOS, Android",
+            "barkio": "iOS, Android"
+        },
+        "2desktop": {
+            "h": "Počítačové platformy",
+            "dm": "Pouze macOS",
+            "barkio": "macOS, Windows, Linux"
+        },
+        "3pricing": {
+            "h": "Platba",
+            "dm": "Zvlášť za každou platformu",
+            "barkio": "Všechny platformy v ceně"
+        },
+        "4download": {
+            "h": "Nákup aplikace",
+            "dm": "Nutná platba předem",
+            "barkio": "Vyzkoušejte zcela zdarma"
+        },
+        "5video": {
+            "h": "Živý video přenos"
+        },
+        "6audio": {
+            "h": "Živý audio přenos"
+        },
+        "7personstations": {
+            "h": "Více Stanic chovatele"
+        },
+        "8dogstations": {
+            "h": "Více Stanic psa",
+            "barkio": "Již brzy"
+        },
+        "9alog": {
+            "h": "Synchronizace Záznamů aktivit"
+        },
+        "10graphs": {
+            "h": "Detailní grafy",
+            "barkio": "Již brzy"
+        },
+        "11commands": {
+            "h": "Funkce Povely"
+        },
+        "12syncommands": {
+            "h": "Synchronizované Povely"
+        },
+        "13twoway": {
+            "h": "Obousměrné video"
+        },
+        "14powersave": {
+            "h": "Úsporný monitorovací režim"
+        },
+        "15background": {
+            "h": "Monitorování na pozadí"
+        },
+        "16talk": {
+            "h": "Možnost mluvit na psa"
+        },
+        "17profile": {
+            "h": "Profily všech psů"
+        },
+        "18notify": {
+            "h": "Oznámení s audio záznamem"
+        },
+        "dm-button": "Koupit Dog Monitor",
+        "bark-button": "Vyzkoušet Barkio zdarma"
+    },
+    "down-pages": {
+        "download": {
+            "h1": "Zvolte svou platformu",
+            "h2": "Barkio je dostupné na různých operačních systémech. Zvolte si ten Váš a stáhněte si Barkio zdarma.",
+            "1h4": "Stáhnout na počítač",
+            "1txt": "Dostupné na macOS, Windows a Linux.",
+            "2h4": "Stáhnout na mobil",
+            "2txt": "Dostupné na zařízeních iOS a Android."
+        },
+        "ioslg": "App Store",
+        "andlg": "Google Play",
+        "maclg": "Stáhnout pro MacOS",
+        "lnxlg": "Stáhnout pro Linux",
+        "winlg": "Stáhnout pro Windows",
+        "downloadthx": {
+            "h1": "Děkujeme za stažení",
+            "h2": "Zůstaňte s námi v kontaktu a připojte se do naší Barkio komunity. Nepřijdete tak o žádné packózní novinky!",
+            "banner": "Připojte se do komunity",
+            "repeattxt": "Pokud stahování nezačalo automaticky,",
+            "link": " zkuste to znovu",
+            "showall": " stáhnout pro "
+        }
+    },
+    "cookies": {
+        "sentence": "Tato stránka používá cookies pro lepší prohlížení našeho webu.",
+        "btn": "Rozumím",
+        "link": "Více informací",
+        "url": "https://cs.wikipedia.org/wiki/HTTP_cookie"
+    }
+}

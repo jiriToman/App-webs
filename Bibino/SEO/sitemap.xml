@@ -1,0 +1,72 @@
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd" 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://barkio.com/</loc>
+         <lastmod>2020-02-25T10:10:46+00:00</lastmod>
+        <priority>1.00</priority>
+        <changefreq>daily</changefreq>
+
+        <xhtml:link rel="alternate" hreflang="en" href="https://barkio.com/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://barkio.com/de"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://barkio.com/cs"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://barkio.com/"/>
+
+        <image:image>
+            <image:loc>https://barkio.com/images/barkio-logotyp.svg</image:loc>
+            <image:title>Barkio</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://barkio.com/images/barkio-logotyp-white.svg</image:loc>
+            <image:title>Barkio</image:title>
+        </image:image>
+
+    </url>
+    <url>
+        <loc>https://barkio.com/en</loc>
+         <lastmod>2020-02-25T10:10:46+00:00</lastmod>
+        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+
+        <xhtml:link rel="alternate" hreflang="de" href="https://barkio.com/de"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://barkio.com/cs"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://barkio.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://barkio.com/en"/>
+    </url>
+    <url>
+        <loc>https://barkio.com/de</loc>
+        <lastmod>2020-02-25T10:10:46+00:00</lastmod>
+        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+
+        <xhtml:link rel="alternate" hreflang="cs" href="https://barkio.com/cs"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://barkio.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://barkio.com/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://barkio.com/de"/>
+    </url>
+    <url>
+        <loc>https://barkio.com/cs</loc>
+        <lastmod>2020-02-25T10:10:46+00:00</lastmod>
+        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://barkio.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://barkio.com/en"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://barkio.com/de"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://barkio.com/cs"/>
+    </url>
+    <url>
+        <loc>https://barkio.com/terms</loc>
+        <lastmod>2020-02-25T10:10:46+00:00</lastmod>
+        <priority>0.01</priority>
+        <changefreq>daily</changefreq>
+
+        <xhtml:link rel="alternate" hreflang="en" href="https://barkio.com/terms"/>
+    </url>
+</urlset>
+
+
+

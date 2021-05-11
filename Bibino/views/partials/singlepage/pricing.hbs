@@ -1,0 +1,260 @@
+<header class="container pricing{{#if @root.offers.special}} special{{/if}}">
+    <div class=" col-12 d-flex align-items-center flex-column">
+        
+       
+        {{#if promotion}}
+
+            <h1 class="{{#if @root.offers.special}}{{#if (equals promotion "black_friday")}}{{else}}mb-0{{/if}} {{/if}}">{{i18next (txtmerge "pricing." promotion ".title") @root.lang }}</h1>
+            {{#if @root.offers.special}}
+                {{#if (equals promotion "black_friday")}}                        
+                {{else}}
+                <h3 class="mob-center mb-16p">{{i18next (txtmerge "pricing." promotion ".title2") @root.lang }}</h3>
+                {{/if}}
+            {{/if}}
+                            
+            <p class="subheader">{{i18next (txtmerge "pricing." promotion ".subtitle") @root.lang }}</p>
+        {{else}}
+            <h1 >{{i18next "pricing.h1" @root.lang }}</h1>
+        {{/if}}
+
+        {{#if @root.offers.special}}
+            {{#if (equals promotion "black_friday")}}
+                {{> components/countdown}}
+            {{/if}}
+
+        {{else}}
+            <div id="pricing-features" class="col-12 col-lg-8">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature">
+                        <div class="f-inside">
+                            <picture id="pic-icon-infi" class="pricing" alt="Icon of the infinity">
+                                <source srcset="/images/icon-infi.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-infi.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-infi.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-infi.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-infi.svg">
+                            </picture>
+                            <p>{{i18next "pricing.unlimited" @root.lang }}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature">
+                        <div class="f-inside">
+                            <picture id="pic-icon-star" class="pricing" alt="Icon of the star">
+                                <source srcset="/images/icon-star.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-star.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-star.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-star.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-star.svg">
+                            </picture>
+                            <p>{{i18next "pricing.access" @root.lang }}</p>
+                        </div>
+                    </div>
+                    <div id="last-pric-feature" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature">
+                        <div class="f-inside">
+                            <picture id="pic-icon-chord" class="pricing" alt="Icon of the chord">
+                                <source srcset="/images/icon-lullaby.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-lullaby.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-lullaby.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-lullaby.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-lullaby.svg">
+                            </picture>
+
+                            <p>{{i18next "pricing.replay" @root.lang }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+       
+    </div>
+
+    <div class=" col-12 d-flex align-items-center flex-column">
+        <div id="pricing-offers" class="row w-100 justify-content-center">
+
+            {{!-- normalni offers --}}
+            {{#each offers.availableProducts}}
+
+                <div id="{{@index}}-offer" class="entry col-12 col-lg outer {{#if discount}} d-color {{/if}} {{#if @root.offers.special}} d-color fat {{@root.lang}}{{/if}}">
+                    {{#if discount}}
+                        {{#if @root.promotion}}
+                        {{else}}
+                            <div class="bubble-box">
+                                <p class="d-bubble" id="{{@index}}save">{{i18next "pricing.save" @root.lang }}&nbsp;{{discount}}%
+                                </p>
+                            </div>
+                        {{/if}} 
+                    {{/if}}
+
+                    {{#if @root.offers.special}} 
+                        <div class="bubble-box">
+                            <div class="bubble d-flex justify-content-center align-items-center">
+                                <p class="d-bubble-big" id="{{@index}}save"><span class="larger">-{{@root.offers.special}}</span>%</p>
+                            </div>
+                        
+                        </div>
+                    {{/if}}
+                        
+                    {{!-- fialovy odstavec --}}
+                    {{#if @root.offers.special}}
+                        <div class="pricing-h">
+                            <h4 class="purple">{{i18next (txtmerge "pricing." @root.promotion ".boxheader") @root.lang }}</h4>
+                        </div>
+                    {{else}}
+                    <div class="pricing-h">
+                        <h4 class="purple">{{i18next (txtmerge "pricing." (duration period) "ly") @root.lang }}</h4>
+                    </div>
+                    {{/if}}
+
+                    {{#if trialPeriod}}
+
+
+                        {{#if defTrialPeriod}}{{!-- pokud  ma trial lepsi nez def--}}
+                            <del>
+                                <p class="small-md price-top">
+                                    {{i18nextP (txtmerge "pricing.plurals." (duration defTrialPeriod) "Trial") defTrialDuration  @root.lang }}
+                                </p>
+                            </del>
+                            <h4 class="dark my-0">{{i18nextP (txtmerge "pricing.plurals." (duration trialPeriod) "Trial") trialDuration  @root.lang }}*</h4>    
+                        {{else}}{{!-- pokud ma pouze trial --}}
+                            <h4 class="dark my-0 ptop-n">{{i18nextP (txtmerge "pricing.plurals." (duration trialPeriod) "Trial") trialDuration  @root.lang }}*</h4>
+                        {{/if}}
+
+                            {{!-- pokud ma cenu lepsi nez def --}}
+                        {{#if defPrice}}
+                            <p class="small-md mb-n">{{i18next "pricing.then" @root.lang }} <del>{{curr defPrice currency}}</del>&nbsp;{{curr price currency}} {{i18next (txtmerge "pricing.p" (duration period) "") @root.lang }}</p>
+                        {{else}}{{!-- trial a price stejna nebo horsi jak def --}}
+                            <p class="small-md mb-n"> {{i18next "pricing.then" @root.lang }} {{curr price currency}} {{i18next (txtmerge "pricing.p" (duration period) "") @root.lang }}</p>
+                        {{/if}}
+                    {{else}}{{!-- pokud nema  trial a ma cenu lepsi nez def--}}
+                        {{#if defPrice}}
+                            {{#if @root.offers.special}}
+                                <del><p class="small-md price-top">{{curr defPrice currency}}</p></del>
+                                <h4 class="dark pduration mb-n big-txt">{{curr price  currency}}</h4>
+                            {{else}} 
+                                <del><p class="small-md price-top">{{curr defPrice currency}}</p></del>
+                                <h4 class="dark pduration">{{curr price  currency}}</h4>
+                                <p class="p-duration mb-n">{{i18next (txtmerge "pricing.p" (duration period) "") @root.lang }}</p>
+                            {{/if}}
+                        {{else}}{{!-- jinak pokud ma cenu  a zadny trial --}}
+                                <h4 class="dark mt-auto pduration ptop-n">{{curr price currency}}</h4>  
+                                <p class="p-duration mb-n">{{i18next (txtmerge "pricing.p" (duration period) "") @root.lang }}</p>
+                        {{/if}}
+                    {{/if}}
+
+                    <div id="button-container-{{@index}}" class="d-flex justify-content-center">
+                        {{#if discount}}{{!-- buttony - pokud nejlepsi nabidka --}}
+                            <a id="buy-{{period}}-best" class="btn buttonlink lg" href="/{{@root.lang}}/account/purchaseDetails?id={{productId}}&country={{@root.countryCode}}">
+                            {{#if trialPeriod}}{{!-- s trialem --}}
+                                {{i18next "pricing.tryfree" @root.lang }}
+                            {{else}}{{!-- bez trialu --}} 
+                                {{i18next "pricing.subscribe" @root.lang }}
+                            {{/if}}
+                                </a>
+                        {{else}}{{!--default button  --}}
+                            {{#if @root.offers.special}}
+                                <a id="buy-{{period}}-best" class="btn buttonlink lg" href="/{{@root.lang}}/account/purchaseDetails?id={{productId}}&country={{@root.countryCode}}">
+                                {{i18next (txtmerge "pricing." @root.promotion ".button" ) @root.lang }}
+                                </a>
+                            {{else}}
+                            <a id="buy-{{period}}" class="btn btn-outline-primary buttonlink lg" href="/{{@root.lang}}/account/purchaseDetails?id={{productId}}&country={{@root.countryCode}}">
+                                {{#if trialPeriod}}{{!-- s trialem --}}
+                                    {{i18next "pricing.tryfree" @root.lang }}
+                                {{else}}{{!-- bez trialu --}}    
+                                    {{i18next "pricing.subscribe" @root.lang }}
+                                {{/if}}
+                                </a>    
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                    {{#if trialPeriod}}{{!-- veticka pod nabidkou pokud ma trial --}}
+                        <p class="explainer">{{i18next "pricing.explainer" @root.lang }}</p>
+                    {{/if}}
+                    
+                </div>
+                {{#if @root.offers.special}} 
+                     <div class="row w-100 justify-content-center">
+                        <div class=" col-12 col-lg-4 outer">
+                            
+                                <p class="special explainer {{@root.lang}}">{{i18nextP "pricing.promotion.explainer" (curr defPrice currency) @root.lang }}</p>
+                            
+                        </div>
+                    </div>
+                {{/if}}    
+            {{/each}}
+
+
+            {{#if error}}
+                <div class="entry col-12" style="padding-top:200px !important">
+                    <h4>{{error}}</h4>
+                </div>
+               {{/if}}
+        </div>
+
+    </div>
+
+    <div class=" col-12 d-flex align-items-center flex-column">
+        {{#if @root.offers.special}}
+        <div id="pricing-features" class="col-12 col-lg-8 under">
+                <div class="row">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature under">
+                        <div class="f-inside">
+                            <picture id="pic-icon-infi" class="pricing" alt="Icon of the infinity">
+                                <source srcset="/images/icon-infi.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-infi.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-infi.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-infi.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-infi.svg">
+                            </picture>
+                            <p>{{i18next "pricing.unlimited" @root.lang }}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature under">
+                        <div class="f-inside">
+                            <picture id="pic-icon-star" class="pricing" alt="Icon of the star">
+                                <source srcset="/images/icon-star.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-star.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-star.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-star.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-star.svg">
+                            </picture>
+                            <p>{{i18next "pricing.access" @root.lang }}</p>
+                        </div>
+                    </div>
+                    <div id="last-pric-feature" class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 feature under">
+                        <div class="f-inside">
+                            <picture id="pic-icon-chord" class="pricing" alt="Icon of the chord">
+                                <source srcset="/images/icon-lullaby.svg"
+                                        media="(prefers-color-scheme: dark) and (min-width:768px)">
+                                <source srcset="/images/icon-lullaby.svg"
+                                        media="(prefers-color-scheme: dark) and (max-width:767px)">
+                                <source srcset="/images/icon-lullaby.svg" media=" (min-width:768px)">
+                                <source srcset="/images/icon-lullaby.svg" media=" (max-width:767px)">
+                                <img class="pricing-icon" src="/images/icon-lullaby.svg">
+                            </picture>
+
+                            <p>{{i18next "pricing.replay" @root.lang }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <a id="prom-btn-under" class="btn btn-outline-primary buttonlink lg" href="/{{@root.lang}}">{{i18next "promotion.learnmore" @root.lang}}</a>
+                </div>
+            </div>
+        {{else}}
+            
+        {{/if}}
+       
+    </div>
+</header>
+
+{{!-- /{{t "home.lang" }} --}}

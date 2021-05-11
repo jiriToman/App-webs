@@ -1,0 +1,79 @@
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "MobileApplication",
+            "name": "Barkio: Dog Monitor",
+            "alternateName": "Barkio: Hundemonitor",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.3",
+                "ratingcount": "23"
+            },
+            "dateModified":"2020-02-26",
+            "applicationCategory": "Lifestyle",
+            "applicationSubCategory": "Dogs",
+            "description": "Barkio turns your two devices into a single dog monitoring app. Watch live video of your dog, hear every bark, and interact remotely.",
+            "operatingSystem": "Requires iOS 10.0 or later, Android 5.0 or later, MacOS 10.10 or later, Windows 10.",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.tappytaps.android.barkio, https://apps.apple.com/us/app/barkio-dog-monitor/id1362484782?ls=1",
+            "offers": {
+                "@type": "AggregateOffer",
+                "highPrice": "19.99",
+                "lowPrice": "0",
+                "offerCount": "3",
+                "priceCurrency": "USD",
+                "priceSpecification": [
+                    {
+                        "@type": "UnitPriceSpecification",
+                        "price": "0.00",
+                        "priceCurrency": "USD",
+                        "name": "Barkio free trial","referenceQuantity": {
+                            "@type": "QuantitativeValue",
+                            "value": "10",
+                            "unitCode": "HUR"
+                        }
+                    },
+                    {
+                        "@type": "UnitPriceSpecification",
+                        "price": "19.99",
+                        "priceCurrency": "USD",
+                        "name": "Barkio annual subscription(first 3 days free)",
+                        "referenceQuantity": {
+                            "@type": "QuantitativeValue",
+                            "value": "1",
+                            "unitCode": "ANN"
+                        }
+                    },
+                    {
+                        "@type": "UnitPriceSpecification",
+                        "price": "2.99",
+                        "priceCurrency": "USD",
+                        "name": "Barkio monthly subscription",
+                        "referenceQuantity": {
+                            "@type": "QuantitativeValue",
+                            "value": "1",
+                            "unitCode": "MON"
+                        }
+                    }
+                ]
+            },
+            "featureList": "MULTIPLATFORM ACCOUNT, COMMANDS, LIVE VIDEO STREAM, UNLIMITED REACH, KNOW WHEN YOUR DOG BARKS (log), EVERY NOISE, DISCREET MODE, BACKGROUND MODE,",
+            "fileSize": "9.2 - 47 MB",
+            "url":"https://www.barkio.com/",
+            "thumbnailUrl":"https://barkio.com/images/barkio-logotyp.svg",
+            "screenshot":"https://barkio.com/images/image_og_en.jpg"
+        }
+</script>
+
+<header class="container">
+    {{> home/header/header}}
+    <!-- modal mobil-->
+    {{> home/header/modalplatforms}}
+</header>
+<main>
+    <div id="testdiv"></div>
+    {{> home/reasons}}
+    {{> home/features}}
+    {{> home/newsletter}}
+    {{> home/testimony}}
+    {{> mainlayout/footer/trynow}}
+</main>

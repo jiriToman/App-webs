@@ -1,0 +1,41 @@
+// main: ../main.scss
+.ebooks {
+    button {
+        margin: auto;
+        transition: all 0.3s;
+        border-radius: 40px;
+        background-color: getColor(primary-base);
+        padding: 12px 24px;
+        border: none;
+        position: relative;
+        display: block;
+        outline: none;
+        color: getColor(surface);
+        font-weight: bold;
+        margin-top: 24px;
+        &:hover {
+            background-color: getColor(primary-lighter);
+        }
+        &:active {
+            background-color: getColor(primary-darker);
+        }
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            margin-top: 32px;
+        }
+    }
+}
+
+.b-cont {
+    display: flex;
+    justify-content: center;
+}
+
+#love {
+    @media screen and (min-width: $xl) {
+        width: 317px;
+    }
+    width: 264px;
+    margin: auto;
+    position: relative;
+    display: block;
+}

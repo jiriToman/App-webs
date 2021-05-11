@@ -1,0 +1,244 @@
+{
+  "home": {
+    "lang": "home.lang",
+    "description": "home.description",
+    "title": "home.title",
+    "canonical": "home.canonical",
+    "ogurl": "home.ogurl",
+    "og": "home.og",
+    "locale": "home.locale",
+    "alternate1": "home.alternate1",
+    "alternate2": "home.alternate2"
+  },
+  "menu": {
+    "supportlink": "menu.supportlink",
+    "support": "menu.support",
+    "fblink": "menu.fblink",
+    "fb": "menu.fb",
+    "sale": "menu.sale",
+    "gift": "menu.gift"
+  },
+  "platforms": {
+    "andlink": "platforms.andlink",
+    "GooglePlay": "platforms.GooglePlay",
+    "ioslink": "platforms.ioslink",
+    "appStore": "platforms.appStore",
+    "available": "platforms.available",
+    "ios": "platforms.ios",
+    "and": "platforms.and",
+    "maclink": "platforms.maclink",
+    "mac": "platforms.mac",
+    "winlink": "platforms.winlink",
+    "win": "platforms.win",
+    "a": "platforms.a",
+    "lnxlink": "platforms.lnxlink",
+    "lnx": "platforms.lnx",
+    "now": "platforms.now"
+  },
+  "pricing": {
+    "h1": "pricing.h1",
+    "unlimited": "pricing.unlimited",
+    "access": "pricing.access",
+    "replay": "pricing.replay",
+    "save": "pricing.save",
+    "weekly": "pricing.weekly",
+    "monthly": "pricing.monthly",
+    "yearly": "pricing.yearly",
+    "free": "pricing.free",
+    "trial": "pricing.trial",
+    "then": "pricing.then",
+    "plural": {
+      "dayTrial": "pricing.plural.dayTrial",
+      "dayTrial_plural": "pricing.plural.dayTrial"
+    },
+    "{{promotion}}": {
+      "title": "pricing.{{promotion}}.title"
+    },
+    "upgrade": {
+      "title": "pricing.upgrade.title",
+      "subtitle": "pricing.upgrade.subtitle",
+      "h4": "pricing.upgrade.h4",
+      "explainer": "pricing.upgrade.explainer",
+      "boxheader": "pricing.upgrade.boxheader"
+    },
+    "upgrades": {
+      "title": "pricing.upgrades.title",
+      "subtitle": "pricing.upgrades.subtitle"
+    },
+    "firstyear": "pricing.firstyear",
+    "undefined": {
+      "boxheader": "pricing.undefined.boxheader",
+      "explainer": "pricing.undefined.explainer",
+      "button": "pricing.undefined.button"
+    },
+    "firstundefined": "pricing.firstundefined",
+    "offer_20_off": {
+      "title": "pricing.offer_20_off.title",
+      "title2": "pricing.offer_20_off.title2",
+      "subtitle": "pricing.offer_20_off.subtitle",
+      "boxheader": "pricing.offer_20_off.boxheader",
+      "button": "pricing.offer_20_off.button",
+      "explainer": "pricing.offer_20_off.explainer",
+      "countdownTime": "pricing.offer_20_off.countdownTime",
+      "countToDate": "pricing.offer_20_off.countToDate"
+    },
+    "black_friday": {
+      "title2": "pricing.black_friday.title2",
+      "countToDate": "pricing.black_friday.countToDate",
+      "notReady": "pricing.black_friday.notReady",
+      "expired": "pricing.black_friday.expired"
+    }
+  },
+  "footer": {
+    "doclinks": {
+      "privacylink": "footer.doclinks.privacylink",
+      "privacy": "footer.doclinks.privacy",
+      "toslink": "footer.doclinks.toslink",
+      "tos": "footer.doclinks.tos",
+      "preskitlink": "footer.doclinks.preskitlink",
+      "preskit": "footer.doclinks.preskit",
+      "uptimelink": "footer.doclinks.uptimelink",
+      "uptime": "footer.doclinks.uptime",
+      "copytd": "footer.doclinks.copytd"
+    },
+    "copyus": "footer.copyus",
+    "contactus": "footer.contactus",
+    "trybanner": {
+      "h4": "footer.trybanner.h4",
+      "txt": "footer.trybanner.txt"
+    },
+    "gift": "footer.gift"
+  },
+  "header": {
+    "h1": "header.h1",
+    "h2": "header.h2",
+    "h2p2": "header.h2p2",
+    "h2p3": "header.h2p3",
+    "deskdownlink": "header.deskdownlink",
+    "download": "header.download",
+    "modalplatforms": "header.modalplatforms",
+    "arrownvision": "header.arrownvision",
+    "arrownvision2": "header.arrownvision2",
+    "arrowhear": "header.arrowhear",
+    "arrowhear2": "header.arrowhear2"
+  },
+  "modalplatforms": {
+    "txt": "modalplatforms.txt",
+    "1mobh5": "modalplatforms.1mobh5",
+    "2mobh5": "modalplatforms.2mobh5"
+  },
+  "reasons": {
+    "h2": "reasons.h2",
+    "h3": "reasons.h3",
+    "watch": {
+      "h4": "reasons.watch.h4",
+      "txt": "reasons.watch.txt"
+    },
+    "travel": {
+      "h4": "reasons.travel.h4",
+      "txt": "reasons.travel.txt"
+    },
+    "nohw": {
+      "h4": "reasons.nohw.h4",
+      "txt": "reasons.nohw.txt"
+    },
+    "athand": {
+      "h4": "reasons.athand.h4",
+      "txt": "reasons.athand.txt"
+    }
+  },
+  "features": {
+    "h2": "features.h2",
+    "h3": "features.h3",
+    "hd": {
+      "h4": "features.hd.h4",
+      "h4sm": "features.hd.h4sm",
+      "txt": "features.hd.txt"
+    },
+    "talk": {
+      "h4": "features.talk.h4",
+      "h4sm": "features.talk.h4sm",
+      "txt": "features.talk.txt"
+    },
+    "log": {
+      "h4": "features.log.h4",
+      "h4sm": "features.log.h4sm",
+      "txt": "features.log.txt"
+    },
+    "connect": {
+      "h4": "features.connect.h4",
+      "h4sm": "features.connect.h4sm",
+      "txt": "features.connect.txt"
+    },
+    "lullaby": {
+      "h4": "features.lullaby.h4",
+      "h4sm": "features.lullaby.h4sm",
+      "txt": "features.lullaby.txt"
+    },
+    "reliable": {
+      "h4": "features.reliable.h4",
+      "h4sm": "features.reliable.h4sm",
+      "txt": "features.reliable.txt"
+    },
+    "notify": {
+      "h4": "features.notify.h4",
+      "h4sm": "features.notify.h4sm",
+      "txt": "features.notify.txt"
+    },
+    "reach": {
+      "h4": "features.reach.h4",
+      "h4sm": "features.reach.h4sm",
+      "txt": "features.reach.txt"
+    },
+    "platform": {
+      "h4": "features.platform.h4",
+      "h4sm": "features.platform.h4sm",
+      "txt": "features.platform.txt"
+    },
+    "banner": {
+      "h4": "features.banner.h4",
+      "txt": "features.banner.txt"
+    }
+  },
+  "newsletter": {
+    "h2": "newsletter.h2",
+    "txt": "newsletter.txt",
+    "email": "newsletter.email",
+    "submit": "newsletter.submit",
+    "success": "newsletter.success",
+    "error": "newsletter.error",
+    "wmail": "newsletter.wmail"
+  },
+  "testimonials": {
+    "first": {
+      "signature": "testimonials.first.signature",
+      "h2": "testimonials.first.h2",
+      "txt": "testimonials.first.txt"
+    },
+    "second": {
+      "signature": "testimonials.second.signature",
+      "h2": "testimonials.second.h2",
+      "txt": "testimonials.second.txt"
+    },
+    "third": {
+      "signature": "testimonials.third.signature",
+      "h2": "testimonials.third.h2",
+      "txt": "testimonials.third.txt"
+    }
+  },
+  "cookies": {
+    "sentence": "cookies.sentence",
+    "btn": "cookies.btn",
+    "link": "cookies.link",
+    "url": "cookies.url"
+  },
+  "countdown": {
+    "days": "countdown.days",
+    "hours": "countdown.hours",
+    "seconds": "countdown.seconds",
+    "minutes": "countdown.minutes"
+  },
+  "promotion": {
+    "learnmore": "promotion.learnmore"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+
+<head>
+    {{> head/cmstatic}}
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center" id="root"></div>
+    <script>
+        const isTestEnviromnemt = {{{ environment }}}
+
+        function loadCorrectFiles() {
+            if (isTestEnviromnemt) {
+                const testSrc = document.createElement('script');
+                testSrc.src = "/push-message/dist/index.js";
+                return document.head.appendChild(testSrc);
+            }
+            if (!isTestEnviromnemt) {
+                const prodSrc = document.createElement('script');
+                prodSrc.src = "/push-message/bibinoWebViewBuild/index.js";
+                return document.head.appendChild(prodSrc);
+            }
+        }
+        loadCorrectFiles();
+    </script>
+
+</body>
+
+</html>

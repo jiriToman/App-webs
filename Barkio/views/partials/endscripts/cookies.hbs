@@ -1,0 +1,42 @@
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+<script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "rgba(0, 0, 0, 0.87)"
+      },
+      "button": {
+        "background": "#58a509",
+        "text": "#ffffff"
+      }
+    },
+    "theme": "classic",
+    "content": {
+      "message":"{{t "cookies.sentence" }}",
+      "dismiss": "{{t "cookies.btn" }}",
+      "link": "{{t "cookies.link" }}",
+    "href": "{{t "cookies.url" }}",
+    },
+    onPopupOpen: function() {
+      console.log('test');
+                            if( devicesize!='desktop'){
+                               $('#nav').addClass("cookies");
+                                $('header').addClass("cookies");
+
+                            }
+                        },
+    onPopupClose: function() {
+                           if (devicesize=="mobile") {
+                               $('#nav').removeClass("cookies");
+                               $('header').removeClass("cookies");
+                               
+                            }
+                }
+  });
+</script>
+
+
+

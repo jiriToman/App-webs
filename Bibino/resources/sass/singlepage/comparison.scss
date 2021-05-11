@@ -1,0 +1,60 @@
+// main: ../main.scss
+#table-div {
+    @media screen and (max-width: $xs) {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+.tab_content {
+    tr {
+        height: 64px;
+        &:last-child {
+            height: 128px;
+        }
+    }
+    th {
+        vertical-align: middle;
+    }
+    td {
+        vertical-align: middle;
+    }
+    .d-none {
+        tr {
+            height: 128px;
+        }
+    }
+}
+
+#compare_table {
+    thead {
+        th {
+            height: 80px;
+            vertical-align: middle;
+            border-top: none;
+            border-bottom: none;
+            &:nth-child(2),
+            &:nth-child(3) {
+                border-right: none;
+            }
+        }
+        td {
+            border-right: none;
+        }
+    }
+    td {
+        vertical-align: middle;
+    }
+    th {
+        @media screen and (max-width: 360px) {
+            padding-left: 8px;
+        }
+        border-right: getColor(medium-border) 2px solid;
+    }
+}
+
+#c-button {
+    margin: auto;
+    width: 182px;
+    margin-top: 48px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="free_trial_days">
+        <item quantity="one">První den zdarma</item>
+        <item quantity="other">Prvních %d dní zdarma</item>
+        <item quantity="few">První %d dny zdarma</item>
+        <item quantity="many">Prvních %d dní zdarma</item>
+    </plurals>
+    <plurals name="free_trial_weeks">
+        <item quantity="one">První týden zdarma</item>
+        <item quantity="other">Prvních %d týdnů zdarma</item>
+        <item quantity="few">První %d týdny zdarma</item>
+        <item quantity="many">Prvních %d týdnů zdarma</item>
+    </plurals>
+    <plurals name="free_trial_months">
+        <item quantity="one">První měsíc zdarma</item>
+        <item quantity="other">Prvních %d měsíců zdarma</item>
+        <item quantity="few">První %d měsíce zdarma</item>
+        <item quantity="many">Prvních %d měsíců zdarma</item>
+    </plurals>
+</resources>

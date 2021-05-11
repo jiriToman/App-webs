@@ -1,0 +1,12 @@
+{
+    "pricing": {
+        "plurals": {
+            "dayTrial": "{{count}} Tag gratis",
+            "dayTrial_plural": "{{count}} Tage gratis",
+            "weekTrial": "{{count}} Woche gratis",
+            "weekTrial_plural": "{{count}} Wochen gratis",
+            "monthTrial": "{{count}} Monat gratis",
+            "monthTrial_plural": "{{count}} Monate gratis"
+        }
+    }
+}

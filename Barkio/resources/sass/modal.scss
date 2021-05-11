@@ -1,0 +1,200 @@
+// main: main.scss
+#modal {
+    z-index: 33399;
+}
+
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 46px 100px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    background-color: getColor(surface);
+    a {
+        color: getColor(high-emphasis);
+    }
+    h4 {
+        font-weight: bold;
+    }
+    @media screen and (max-width: $xs) {
+        padding-top: 20px;
+    }
+    @media screen and (min-width: $NOTxs) {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+
+.mod-close {
+    float: right;
+    img {
+        @media (prefers-color-scheme: dark) {
+            filter: invert(1.12);
+        }
+    }
+}
+
+.mod-h {
+    padding: 0 !important;
+}
+
+.mod-icons {
+    margin-top: 16px;
+    @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+        margin-top: 32px;
+    }
+    @media screen and (min-width: $xl) {
+        margin-top: 72px;
+    }
+    .mod-li {
+        height: 24px;
+        margin-bottom: 24px;
+        @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+            height: 32px;
+            margin-bottom: 34px;
+        }
+        @media screen and (min-width: $xl) {
+            height: 32px;
+            margin-bottom: 36px;
+        }
+        padding: 0px !important;
+        display: flex;
+        flex-wrap: wrap;
+        &.modal_hv {
+            margin-bottom: 16px;
+        }
+        // modal-old.hbs specific
+        // &.bot-sm {
+        //     @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+        //         margin-bottom: 0px;
+        //     }
+        //     @media screen and (min-width: $xl) {
+        //         margin-bottom: 0px;
+        //     }
+        //     &.bot-xs {
+        //         @media screen and (max-width: $NOTlg) {
+        //             margin-bottom: 0px;
+        //         }
+        //     }
+        // }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img {
+            height: 24px;
+            width: 24px;
+            margin-right: 24px;
+            @media screen and (min-width: $lg) {
+                height: 32px;
+                width: 32px;
+            }
+        }
+        p {
+            vertical-align: middle;
+        }
+    }
+}
+
+.mod-iconsd {
+    margin-top: 16px;
+    @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+        margin-top: 32px;
+    }
+    @media screen and (min-width: $xl) {
+        margin-top: 72px;
+    }
+    .mod-li {
+        a {
+            font-family: $fontR;
+            line-height: 1;
+            letter-spacing: 0.5px;
+            text-align: center;
+            display: block;
+            // width: 100%;
+            margin: auto;
+            transition: all 0.3s;
+            border-radius: 40px;
+            background-color: getColor(surface);
+            color: getColor(primary-base);
+            border: solid 1px getColor(primary-base);
+            padding: 12px 24px;
+            position: relative;
+            outline: none;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                background-color: getColor(primary-lighter);
+                color: getColor(surface);
+                text-decoration: none;
+            }
+            &:active {
+                background-color: getColor(primary-darker);
+                color: getColor(surface);
+                text-decoration: none;
+            }
+            @media screen and (max-width: $sm) {
+                padding: 16px 24px;
+            }
+        }
+        &.order-1 {
+            a {
+                background-color: getColor(primary-base);
+                color: getColor(surface);
+                border: none;
+                cursor: pointer;
+            }
+        }
+        margin-bottom: 24px;
+        @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+            margin-bottom: 34px;
+        }
+        @media screen and (min-width: $xl) {
+            margin-bottom: 36px;
+        }
+        padding: 0px !important;
+        display: flex;
+        flex-wrap: wrap;
+        &.bot-sm {
+            @media screen and (min-width: $lg) and (max-width: $NOTxl) {
+                margin-bottom: 0px;
+            }
+            @media screen and (min-width: $xl) {
+                margin-bottom: 0px;
+            }
+            &.bot-xs {
+                @media screen and (max-width: $NOTlg) {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        img {
+            display: block;
+            height: 116px;
+            width: 116px;
+            margin: auto;
+            padding-bottom: 16px;
+            @media screen and (min-width: $lg) {
+                height: 116px;
+                width: 116px;
+            }
+        }
+        p {
+            vertical-align: middle;
+        }
+    }
+}
+
+#copym {
+    p {
+        text-align: left !important;
+    }
+}
+
+.invert-dark {
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1.12);
+    }
+}

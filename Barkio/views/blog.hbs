@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+{{!-- centermiddle layout --}}
+
+<head>
+
+    {{> head/centermiddle}}
+
+</head>
+
+<body>
+
+    {{> trackscripts/gtmpixel}}
+
+    <div class="center-content">
+
+
+        {{> mainlayout/nav}}
+
+        {{!-- body definovanno views/ a hbs file podle stranky --}}
+        <header class="container">
+            <div style="flex-grow: 1;" id="root"></div>
+        </header>
+
+        {{> mainlayout/footer/footer}}
+    </div>
+
+    {{> endscripts/noswiper}}
+
+    <script>
+        const isTestEnviromnemt = {{{ environment }}}
+
+        function loadCorrectFiles() {
+            if (isTestEnviromnemt) {
+                const testSrc = document.createElement('script');
+                testSrc.src = "/blog/dist/index.js";
+                return document.head.appendChild(testSrc);
+            }
+            if (!isTestEnviromnemt) {
+                const prodSrc = document.createElement('script');
+                prodSrc.src = "/blog/barkioBlogBuild/index.js";
+                return document.head.appendChild(prodSrc);
+            }
+        }
+        loadCorrectFiles();
+    </script>
+
+</body>
+
+</html>

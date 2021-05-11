@@ -1,0 +1,109 @@
+// main: ../main.scss
+#newsletter {
+    background-color: getColor(light-background);
+    input {
+        width: auto;
+    }
+    .submit {
+        width: auto;
+        padding: auto;
+    }
+    .form-inside {
+        display: flex;
+        justify-content: center;
+        padding-top: 8px !important;
+        @media screen and (min-width: $NOTsm) {
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+        }
+    }
+    #email {
+        background-color: transparent;
+        color: getColor(high-emphasis) !important;
+        min-width: 250px !important;
+        @media screen and (min-width: $NOTsm) and (max-width: $NOTlg) {
+            min-width: unset !important;
+        }
+    }
+}
+
+.newsform {
+    justify-content: center;
+    padding-top: 40px !important;
+    @media screen and (min-width: $sm) and (max-width: $NOTlg) {
+        padding-top: 32px;
+    }
+}
+
+.newstext {
+    padding-left: 0;
+    padding-right: 0;
+    @media screen and (min-width: $xl) {
+        padding-left: 56px;
+    }
+    @media screen and (min-width:$lg) and (max-width:$NOTxl) {
+        padding-left: 40px;
+    }
+    @media screen and (min-width:$sm) and (max-width:$NOTlg) {
+        padding-left: 32px;
+    }
+    &.cs {
+        @media screen and (min-width: $sm) and (max-width: $NOTlg) {
+            padding-left: 0px;
+        }
+    }
+    &.nl {
+        @media screen and (min-width: $sm) and (max-width: $NOTlg) {
+            padding-left: 0px;
+        }
+    }
+    &.de {
+        @media screen and (min-width: $sm) and (max-width: $NOTlg) {
+            padding-left: 0px;
+        }
+    }
+}
+
+.newsimg {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    //  justify-content: flex-start;
+    justify-content: center;
+    @media screen and (max-width: $sm) {
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 32px;
+    }
+}
+
+.newsp {
+    padding: 0px;
+    @media screen and (max-width: $NOTsm) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.formspacer {
+    @media screen and (max-width: $xs) {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+#form-email-msg {
+    color: getColor(tint2-base);
+    padding-top: 32px;
+}
+
+#form-success-msg {
+    padding-top: 32px;
+    color: getColor(primary-base);
+}
+
+#form-error-msg {
+    padding-top: 32px;
+    color: getColor(warning-base);
+}

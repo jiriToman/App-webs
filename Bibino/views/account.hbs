@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{t "home.lang" }}">
+
+<head>
+
+  {{> head/centermiddle}}
+</head>
+<script>
+  setTimeout(() => {
+    const rootElement = document.getElementById("root")
+    if (rootElement.childElementCount === 0) {
+      spinner.style.display = "block"
+      window.addEventListener('load', (event) => {
+        const spinner = document.getElementById("spinner")
+        spinner.style.display = "none"
+      });
+    }
+  }, 500)
+</script>
+
+<body>
+
+  {{> trackscripts/gtmpixel}}
+
+  <div class="center-content">
+
+    {{> mainlayout/nav}}
+<header class="container">
+    <div id="spinner" class="loader"></div>
+
+    <div style="flex-grow: 1;" id="root"></div>
+    </header>
+
+    {{> mainlayout/footer/footer}}
+  </div>
+
+  {{> endscripts/noswiper}}
+
+  <script>
+    const isTestEnviromnemt = {{{ environment }}}
+
+    function loadCorrectFiles() {
+      if (isTestEnviromnemt) {
+        const testSrc = document.createElement('script');
+        testSrc.src = "/account/dist/index.js";
+        return document.head.appendChild(testSrc);
+      }
+      if (!isTestEnviromnemt) {
+        const prodSrc = document.createElement('script');
+        prodSrc.src = "/account/bibinoBuild/index.js";
+        return document.head.appendChild(prodSrc);
+      }
+    }
+    loadCorrectFiles();
+  </script>
+
+
+  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+  <script type="text/javascript">
+    Paddle.Setup({ vendor: 119405 });
+  </script>
+</body>
+
+</html>

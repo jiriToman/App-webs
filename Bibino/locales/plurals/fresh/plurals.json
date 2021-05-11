@@ -1,0 +1,14 @@
+{
+    "free_trial_days": {
+        "one": "Free %{count}-day trial",
+        "other": " Free %{count}-day trial"
+    },
+    "free_trial_weeks": {
+        "one": "Free 1-week trial",
+        "other": "Free %{count}-week trial"
+    },
+    "free_trial_months": {
+        "one": "Free 1-month trial",
+        "other": "Free %{count}-month trial"
+    }
+}

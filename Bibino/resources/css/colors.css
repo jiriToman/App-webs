@@ -1,0 +1,56 @@
+:root {
+  --color-high-emphasis: black;
+  --color-medium-emphasis: rgba(0, 0, 0, 0.54);
+  --color-low-emphasis: rgba(0, 0, 0, 0.38);
+  --color-high-border: rgba(0, 0, 0, 0.2);
+  --color-medium-border: rgba(0, 0, 0, 0.12);
+  --color-low-border: rgba(0, 0, 0, 0.08);
+  --color-light-background: rgba(143, 109, 245, 0.04);
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-light-02: rgba(255, 255, 255, 0.2);
+  --color-light-07: rgba(255, 255, 255, 0.7);
+  --color-primary-base: #8f6df5;
+  --color-primary-darker: #8162dd;
+  --color-primary-lighter: #9a7cf6;
+  --color-primary-transparent: rgba(143, 109, 245, 0.12);
+  --color-secondary-base: #2aa598;
+  --color-secondary-darker: #269589;
+  --color-secondary-lighter: #3faea2;
+  --color-secondary-transparent: rgba(42, 165, 152, 0.12);
+  --color-warning-base: #ff416f;
+  --color-warning-lighter: #ff547d;
+  --color-tint1-base: #fa4863;
+  --color-tint2-base: #fab500;
+  --color-tint3-base: #4285f4;
+  --theme: 'light'; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-high-emphasis: white;
+    --color-medium-emphasis: rgba(255, 255, 255, 0.6);
+    --color-low-emphasis: rgba(255, 255, 255, 0.4);
+    --color-high-border: rgba(255, 255, 255, 0.28);
+    --color-medium-border: rgba(255, 255, 255, 0.2);
+    --color-low-border: rgba(255, 255, 255, 0.16);
+    --color-light-background: rgba(255, 255, 255, 0.04);
+    --color-surface: #121212;
+    --color-surface-elevated: #2E2E2E;
+    --color-light-02: rgba(255, 255, 255, 0.98);
+    --color-light-07: rgba(255, 255, 255, 0.93);
+    --color-primary-base: #7c55f1;
+    --color-primary-darker: #7c55f1;
+    --color-primary-lighter: #8966f2;
+    --color-primary-transparent: rgba(143, 109, 245, 0.18);
+    --color-secondary-base: #259287;
+    --color-secondary-darker: #21837a;
+    --color-secondary-lighter: #3faea2;
+    --color-secondary-transparent: rgba(42, 165, 152, 0.18);
+    --color-warning-base: #ce4364;
+    --color-warning-lighter: #d35674;
+    --color-tint1-base: #fa4863;
+    --color-tint2-base: #d8972b;
+    --color-tint3-base: #0083c2;
+    --theme: 'dark'; } }
+
+/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,11 @@
+{
+    "name": "bibino",
+    "lang": ["de", "nl", "fr", "cs"],
+    "apiUrl": "https://api.production.bibino.app/parse",
+    "routes": {
+        "static": "/Bibino",
+        "linkA": "https://apps.apple.com/us/app/bibino-baby-monitor-nanny-cam/id1514427173?pt=271572&ct=Bibino%20Website%20QR%20code&mt=8",
+        "linkG": "https://play.google.com/store/apps/details?id=com.tappytaps.android.bibino&referrer=utm_source%3Dweb-qr-code",
+        "linkYT": "https://youtu.be/GZBOyBwArqU"
+    }
+}

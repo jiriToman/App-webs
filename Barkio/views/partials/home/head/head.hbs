@@ -1,0 +1,87 @@
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="{{t "home.description" }}">
+  <title>{{t "home.title" }}</title>
+  <meta name="title" content="{{t "home.title" }}">
+
+  <link rel="alternate" hreflang="x-default" href="https://barkio.com">
+  <link rel="alternate" hreflang="en" href="https://barkio.com/en">
+  <link rel="alternate" hreflang="de" href="https://barkio.com/de">
+  <link rel="alternate" hreflang="cs" href="https://barkio.com/cs">
+
+  <link rel="canonical" href="{{t "home.canonical" }}" />
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+
+          new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+
+    })(window, document, 'script', 'dataLayer', 'GTM-PDLR876');
+
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="{{t "home.title" }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{t "home.ogurl" }}">
+  <meta property="og:title" content="{{t "home.title" }}">
+  <meta property="og:description" content="{{t "home.description" }}">
+  <meta property="og:image" content="{{t "home.og" }}">
+  <meta property="og:locale" content="{{t "home.locale" }}">
+  <meta property="og:locale:alternate" content="{{t "home.alternate1" }}">
+  <meta property="og:locale:alternate" content="{{t "home.alternate2" }}">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://barkio.com/">
+  <meta property="twitter:title" content="{{t "home.title" }}">
+  <meta property="twitter:description" content="{{t "home.description" }}">
+  <meta property="twitter:image" content="{{t "home.og" }}">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#66AC16">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Fonts, Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800%7CRoboto:400,400i,500,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '737235536748067');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Facebook Pixel Code -->
+  {{!-- cookies --}}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />

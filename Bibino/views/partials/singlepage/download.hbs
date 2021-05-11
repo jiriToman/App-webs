@@ -1,0 +1,120 @@
+<header class="container d-flex message">
+    <main class="align-self-center">
+        <section id="main" class="row align-items-center no-gutters downloads">
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <div class="row msg">
+                    <h2 class="col-12">{{t "downpages.download.h1" }}</h2>
+                    <p class="subheader col-12">{{t "downpages.download.h2" }}</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 col-lg-6 bg-light rounded download-tile">
+
+                        <picture>
+                            <source srcset="/images/desktops_dark.svg" media="(prefers-color-scheme: dark)">
+                            <img src="/images/desktops.svg" alt="Desktop download">
+                        </picture>
+
+                        <h4>{{t "downpages.download.1h4" }}</h4>
+                        {{!-- <p>{{t "downpages.download.1txt" }}</p> --}}
+                        <p class="d-none d-lg-block">{{t "platforms.available" }} {{t "platforms.mac" }},
+                            {{t "platforms.win" }}&nbsp;{{t "platforms.a" }} {{t "platforms.lnx" }}</p>
+
+                        <!-- Split download button start -->
+                        <div class="">
+                             <p class="d-block d-lg-none">{{t "modalplatforms.txt" }}</p>
+                            <div class="btn-group hidden display-macos macdown">
+                                <a id="mac-download-macos" type="button" href="/{{t "home.lang" }}/download-thanks/mac"
+                                    class="btn buttonlink lg split_right">{{t "downpages.maclg" }}</a>
+                                <button type="button" class="btn buttonlink lg dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a id="mac-download-windows" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/win">{{t "downpages.winlg" }}</a>
+                                    <a id="mac-download-linux" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/lnx">{{t "downpages.lnxlg" }}</a>
+                                </div>
+                            </div>
+
+                            <div class="btn-group hidden display-windows windown">
+                                <a id="win-download-windows" type="button"
+                                    href="/{{t "home.lang" }}/download-thanks/win"
+                                    class="btn buttonlink lg split_right">{{t "downpages.winlg" }}</a>
+                                <button type="button" class="btn buttonlink lg dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a id="win-download-macos" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/mac">{{t "downpages.maclg" }}</a>
+                                    <a id="win-download-linux" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/lnx">{{t "downpages.lnxlg" }}</a>
+                                </div>
+                            </div>
+
+                            <div class="btn-group hidden display-linux lnxdown">
+                                <a id="lnx-download-linux" type="button" href='/{{t "home.lang" }}/download-thanks/lnx'
+                                    class="btn buttonlink lg split_right">{{t "downpages.lnxlg" }}</a>
+                                <button type="button" class="btn buttonlink lg dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a id="lnx-download-windows" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/win">{{t "downpages.winlg" }}</a>
+                                    <a id="lnx-download-macos" class="dropdown-item"
+                                        href="/{{t "home.lang" }}/download-thanks/mac">{{t "downpages.maclg" }}</a>
+                                </div>
+                            </div>
+                            <noscript>
+                                <a id="noscript-download-macos"
+                                    href="{{t "platforms.maclink" }}">{{t "downpages.maclg" }}</a>
+                                <a id="noscript-download-windows"
+                                    href="{{t "platforms.winlink" }}">{{t "downpages.winlg" }}</a>
+                                <a id="noscript-download-linux"
+                                    href="{{t "platforms.lnxlink" }}">{{t "downpages.lnxlg" }}</a>
+                            </noscript>
+                        </div>
+                        <div class="mt-5">
+                            {{!-- <p>{{t "platforms.coming" }}</p> --}}
+                        </div>
+                        <!-- Split download button end -->
+
+                    </div>
+                    <div class="col-12 col-lg-6 download-tile">
+
+                        <picture>
+                            <source srcset="/images/mobile_download_dark.svg" media="(prefers-color-scheme: dark)">
+                            <img src="/images/mobile_download.svg" alt="Mobile download">
+                        </picture>
+
+                        <h4>{{t "downpages.download.2h4" }}</h4>
+                        <p>{{t "downpages.download.2txt" }}</p>
+                        <div class="align-middle d-inline-flex">
+                            <img class="mr-3 qr" alt="QR code" src="/images/q-rcode.svg">
+                            <div>
+                                <a role="button" class="mb-2 d-block" id="download-app-store"
+                                    href='{{t "platforms.ioslink" }}'>
+                                    <img alt="App store" src="/images/app-store-big.svg">
+                                </a>
+                                <a role="button" class="d-block" id="download-google-play"
+                                    href='{{t "platforms.andlink" }}'>
+                                    <img alt="Google play" src="/images/google-play-big.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <div class="hidden">
+        <a id="maclink" href="{{t "platforms.maclink" }}"></a>
+        <a id="winlink" href="{{t "platforms.winlink" }}"></a>
+        <a id="lnxlink" href="{{t "platforms.lnxlink" }}"></a>
+    </div>
+</header>
+<div id="testdiv"></div>

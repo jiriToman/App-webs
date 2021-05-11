@@ -1,0 +1,11 @@
+// main: ../main.scss
+#love {
+    @media screen and (min-width: $xl) {
+        width: 317px;
+    }
+    padding-bottom: 32px;
+    width: 264px;
+    margin: auto;
+    position: relative;
+    display:block;
+}

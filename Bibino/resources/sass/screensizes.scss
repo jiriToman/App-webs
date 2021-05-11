@@ -1,0 +1,50 @@
+// main: ./main.scss,
+$xs:575px;
+// xs only
+$NOTxs:576px;
+// sm start
+$sm:767px;
+// xs and sm only
+$NOTsm:768px;
+// md start
+$NOTlg:991px;
+// all except lg + xl
+$lg:992px;
+// lg start
+$NOTxl:1199px;
+// all except xl
+$xl:1200px;
+// xl start
+.hidden {
+    display: none !important;
+}
+
+@mixin xs {
+    @media (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: $NOTxs) and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $NOTsm) and (max-width: $NOTlg) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $lg) and (max-width: $NOTxl) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $xl) {
+        @content;
+    }
+}

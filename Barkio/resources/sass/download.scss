@@ -1,0 +1,64 @@
+// main: main.scss
+.downloads {
+    h1 {
+        margin-bottom: 16px;
+        margin-top: 56px;
+    }
+}
+
+.downloadthx {
+    h1 {
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+}
+
+.download-tile {
+    padding: 56px 48px !important;
+    margin-top: 40px;
+
+    p {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 8px 0;
+    }
+}
+
+#notwork {
+    text-align: center;
+    padding-bottom: 32px;
+    width: 100vw;
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+        color: getColor(primary-base);
+    }
+
+    p {
+        display: block;
+        margin-bottom: 0;
+        color: getColor(low-emphasis);
+    }
+}
+
+.img-outline {
+    @media(prefers-color-scheme: dark) {
+        img {
+            background-color: getColor(low-border);
+            padding: 1px;
+        }
+
+        .d-block {
+            img {
+                border-radius: 7px;
+            }
+        }
+    }
+}
+
+.qr {
+    border: 3px solid #fff;
+}

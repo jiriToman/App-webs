@@ -1,0 +1,16 @@
+{
+    "pricing": {
+        "plurals": {
+            "dayTrial_0": "První den zdarma",
+            "dayTrial_1": "První {{count}} dny zdarma",
+            "dayTrial_2": "Prvních {{count}} dní zdarma",
+            "weekTrial_0": "První týden zdarma",
+            "weekTrial_1": "První {{count}} týdny zdarma",
+            "weekTrial_2": "Prvních {{count}} týdnů zdarma",
+            "monthTrial_0": "První měsíc zdarma",
+            "monthTrial_1": "První {{count}} měsíce zdarma",
+            "monthTrial_2": "Prvních {{count}} měsíců zdarma"
+
+        }
+    }
+}
