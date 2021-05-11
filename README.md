@@ -4,7 +4,7 @@ The part of the [Bibino website](https://bibinoapp.com) and
 [Barkio website](https://barkio.com) created by Jiri Toman in [Express](http://expressjs.com/) and Handlebars.js via [hbs](https://www.npmjs.com/package/hbs).
 
 Web is build in such a way that it's easy to reuse for future similar apps websites.
-(Project started as a request to build static pages serving different languages via js server > due to success, employers watnted to be able to use diferent themes based on deployment/config file > After that employers wanted to present data from app-specific servers > junior colleague arrived and worked on feature specific(Gift card, Blog, Account) react builds connecting to the mobile & desktop application servers. That were served as a static pages by my Express. server.)
+(Project started as a request to build static pages serving different languages via js server > due to success, employers watnted to be able to use diferent themes based on deployment/config file > After that employers wanted to present data from app-specific servers > junior colleague arrived and worked on feature specific(Gift card, Blog, Account, and push message) react builds connecting to the mobile & desktop application servers. That were served as a static pages by my Express. server.)
 
 ## Important notes to js
 
